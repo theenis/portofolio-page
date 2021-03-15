@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style/style.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
@@ -14,6 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <!--owl-->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -26,12 +33,22 @@
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous"
   />
+  <!--owl-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+/>
   </head>
   <body>
     <div class="wrapper">
       <div class="background-bg">
-        <div class="sidenav"></div>
+        <div class="background-filter">
+          <div class="background-img" style="background: url('images/man.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
+        </div>
       </div>
       <div class="content">
         <div class="main">
@@ -277,95 +294,103 @@
               </div>
               <div class="fourcards">
                 <div class="content-carousel">
-                  <div class="owl-carousel">
-                    <div class="item">
-                      <div class="pricing-item">
-                        <div class="icons">
-                          <i class="fas fa-star"></i>
-                        </div>
-                        <div class="name">
-                          <span>Basic</span>
-                        </div>
-                        <div class="amount">
-                          <span class="number">
-                            <span class="dollar"> $ </span>
-                            <span> 39 </span>
-                            <span class="period"> hour </span>
-                          </span>
-                        </div>
-                        <div class="feature-list">
-                          <ul>
-                            <li>Web Development</li>
-                            <li>Advetising</li>
-                            <li>Game Development</li>
-                            <li><del>Music Writing</del></li>
-                            <li><del>Photography</del></li>
-                          </ul>
-                          <div id="portolink" class="filink">
-                            <a href="#pageabout">BUY NOW</a>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="item">
+                                <div class="pricing-item">
+                                  <div class="icons">
+                                    <i class="fas fa-star"></i>
+                                  </div>
+                                  <div class="name">
+                                    <span>Basic</span>
+                                  </div>
+                                  <div class="amount">
+                                    <span class="number">
+                                      <span class="dollar"> $ </span>
+                                      <span> 39 </span>
+                                      <span class="period"> hour </span>
+                                    </span>
+                                  </div>
+                                  <div class="feature-list">
+                                    <ul>
+                                      <li>Web Development</li>
+                                      <li>Advetising</li>
+                                      <li>Game Development</li>
+                                      <li><del>Music Writing</del></li>
+                                      <li><del>Photography</del></li>
+                                    </ul>
+                                    <div id="portolink" class="filink">
+                                      <a href="#pageabout">BUY NOW</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="item">
+                                <div class="pricing-item">
+                                  <div class="icons">
+                                    <i class="fas fa-star"></i>
+                                  </div>
+                                  <div class="name">
+                                    <span>Premium</span>
+                                  </div>
+                                  <div class="amount">
+                                    <span class="number">
+                                      <span class="dollar"> $ </span>
+                                      <span> 59</span>
+                                      <span class="period">hour </span>
+                                    </span>
+                                  </div>
+                                  <div class="feature-list">
+                                    <ul>
+                                      <li>Web Development</li>
+                                      <li>Advetising</li>
+                                      <li>Game Development</li>
+                                      <li>Music Writing</li>
+                                      <li>Photography</li>
+                                    </ul>
+                                    <div id="portolink" class="filink">
+                                      <a href="#pageabout">BUY NOW</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="item">
+                                <div class="pricing-item">
+                                  <div class="icons">
+                                    <i class="fas fa-star"></i>
+                                  </div>
+                                  <div class="name">
+                                    <span>Ultimate</span>
+                                  </div>
+                                  <div class="amount">
+                                    <span class="number">
+                                      <span class="dollar"> $ </span>
+                                      <span> 79 </span>
+                                      <span class="period"> hour </span>
+                                    </span>
+                                  </div>
+                                  <div class="feature-list">
+                                    <ul>
+                                      <li>Web Development</li>
+                                      <li>Advetising</li>
+                                      <li>Game Development</li>
+                                      <li>Music Writing</li>
+                                      <li>Photography</li>
+                                    </ul>
+                                    <div id="portolink" class="filink">
+                                      <a href="#pageabout">BUY NOW</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="item">
-                      <div class="pricing-item">
-                        <div class="icons">
-                          <i class="fas fa-star"></i>
-                        </div>
-                        <div class="name">
-                          <span>Premium</span>
-                        </div>
-                        <div class="amount">
-                          <span class="number">
-                            <span class="dollar"> $ </span>
-                            <span> 59</span>
-                            <span class="period">hour </span>
-                          </span>
-                        </div>
-                        <div class="feature-list">
-                          <ul>
-                            <li>Web Development</li>
-                            <li>Advetising</li>
-                            <li>Game Development</li>
-                            <li>Music Writing</li>
-                            <li>Photography</li>
-                          </ul>
-                          <div id="portolink" class="filink">
-                            <a href="#pageabout">BUY NOW</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="pricing-item">
-                        <div class="icons">
-                          <i class="fas fa-star"></i>
-                        </div>
-                        <div class="name">
-                          <span>Ultimate</span>
-                        </div>
-                        <div class="amount">
-                          <span class="number">
-                            <span class="dollar"> $ </span>
-                            <span> 79 </span>
-                            <span class="period"> hour </span>
-                          </span>
-                        </div>
-                        <div class="feature-list">
-                          <ul>
-                            <li>Web Development</li>
-                            <li>Advetising</li>
-                            <li>Game Development</li>
-                            <li>Music Writing</li>
-                            <li>Photography</li>
-                          </ul>
-                          <div id="portolink" class="filink">
-                            <a href="#pageabout">BUY NOW</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -380,90 +405,100 @@
                       <h5>Working with</h5>
                     </div>
                     <div class="content-carousel">
-                      <div class="owl-carousel">
-                        <div class="fitem">
-                          <div class="resume-item active">
-                            <div class="date">
-                              <span class="vericaltext"> Present </span>
-                              <div class="fname">
-                                <span>
-                                  The Turin<br />
-                                  Olympics
-                                </span>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="fitem">
+                                    <div class="resume-item active">
+                                      <div class="date">
+                                        <span class="vericaltext"> Present </span>
+                                        <div class="fname">
+                                          <span>
+                                            The Turin<br />
+                                            Olympics
+                                          </span>
+                                        </div>
+                                        <div class="single-post-text-two">
+                                          <p>
+                                            Etiam sit amet orci eget eros faucibus
+                                            tincidunt. Duis leo. Sed fringilla mauris sit
+                                            amet nibh. Donec sodales sagittis magna.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                               </div>
-                              <div class="single-post-text-two">
-                                <p>
-                                  Etiam sit amet orci eget eros faucibus
-                                  tincidunt. Duis leo. Sed fringilla mauris sit
-                                  amet nibh. Donec sodales sagittis magna.
-                                </p>
+                              <div class="swiper-slide">
+                                <div class="fitem">
+                                    <div class="resume-item">
+                                      <div class="date">
+                                        <span class="vericaltext"> 2016-2018 </span>
+                                        <div class="fname">
+                                          <span>
+                                            Red <br />
+                                            Drifting
+                                          </span>
+                                        </div>
+                                        <div class="single-post-text-two">
+                                          <p>
+                                            Etiam sit amet orci eget eros faucibus
+                                            tincidunt. Duis leo. Sed fringilla mauris sit
+                                            amet nibh. Donec sodales sagittis magna.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="fitem">
+                                    <div class="resume-item">
+                                      <div class="date">
+                                        <span class="vericaltext"> 2014-2016 </span>
+                                        <div class="fname">
+                                          <span>
+                                            World <br />
+                                            Economy
+                                          </span>
+                                        </div>
+                                        <div class="single-post-text-two">
+                                          <p>
+                                            Etiam sit amet orci eget eros faucibus
+                                            tincidunt. Duis leo. Sed fringilla mauris sit
+                                            amet nibh. Donec sodales sagittis magna.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="fitem">
+                                    <div class="resume-item">
+                                      <div class="date">
+                                        <span class="vericaltext"> 2012-2014 </span>
+                                      </div>
+                                      <div class="itemcont">
+                                        <div class="fname">
+                                          <span>
+                                            Art Director <br />
+                                            Facebook
+                                          </span>
+                                        </div>
+                                        <div class="single-post-text-two">
+                                          <p>
+                                            Etiam sit amet orci eget eros faucibus
+                                            tincidunt. Duis leo. Sed fringilla mauris sit
+                                            amet nibh. Donec sodales sagittis magna.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="fitem">
-                          <div class="resume-item">
-                            <div class="date">
-                              <span class="vericaltext"> 2016-2018 </span>
-                              <div class="fname">
-                                <span>
-                                  Red <br />
-                                  Drifting
-                                </span>
-                              </div>
-                              <div class="single-post-text-two">
-                                <p>
-                                  Etiam sit amet orci eget eros faucibus
-                                  tincidunt. Duis leo. Sed fringilla mauris sit
-                                  amet nibh. Donec sodales sagittis magna.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="fitem">
-                          <div class="resume-item">
-                            <div class="date">
-                              <span class="vericaltext"> 2014-2016 </span>
-                              <div class="fname">
-                                <span>
-                                  World <br />
-                                  Economy
-                                </span>
-                              </div>
-                              <div class="single-post-text-two">
-                                <p>
-                                  Etiam sit amet orci eget eros faucibus
-                                  tincidunt. Duis leo. Sed fringilla mauris sit
-                                  amet nibh. Donec sodales sagittis magna.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="fitem">
-                          <div class="resume-item">
-                            <div class="date">
-                              <span class="vericaltext"> 2012-2014 </span>
-                            </div>
-                            <div class="itemcont">
-                              <div class="fname">
-                                <span>
-                                  Art Director <br />
-                                  Facebook
-                                </span>
-                              </div>
-                              <div class="single-post-text-two">
-                                <p>
-                                  Etiam sit amet orci eget eros faucibus
-                                  tincidunt. Duis leo. Sed fringilla mauris sit
-                                  amet nibh. Donec sodales sagittis magna.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -480,90 +515,102 @@
                       <h5>Studied at</h5>
                     </div>
                     <div class="content-carousel">
-                      <div class="owl-carousel">
-                        <div class="fitem">
-                          <div class="resume-item active">
-                            <div class="date">
-                              <span class="vericaltext"> 2011-2012 </span>
-                              <div class="fname">
-                                <span>
-                                  Art University <br />
-                                  New York
-                                </span>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="fitem">
+                                    <div class="resume-item active">
+                                      <div class="date">
+                                        <span class="vericaltext"> 2011-2012 </span>
+                                        <div class="fname">
+                                          <span>
+                                            Art University <br />
+                                            New York
+                                          </span>
+                                        </div>
+                                        <div class="single-post-text-two">
+                                          <p>
+                                            Etiam sit amet orci eget eros faucibus
+                                            tincidunt. Duis leo. Sed fringilla mauris sit
+                                            amet nibh. Donec sodales sagittis magna.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                               </div>
-                              <div class="single-post-text-two">
-                                <p>
-                                  Etiam sit amet orci eget eros faucibus
-                                  tincidunt. Duis leo. Sed fringilla mauris sit
-                                  amet nibh. Donec sodales sagittis magna.
-                                </p>
+                              <div class="swiper-slide">
+                                <div class="fitem">
+                                    <div class="resume-item">
+                                      <div class="date">
+                                        <span class="vericaltext"> 2010-2011 </span>
+                                        <div class="fname">
+                                          <span>
+                                            Programming Course <br />
+                                            Paris
+                                          </span>
+                                        </div>
+                                        <div class="single-post-text-two">
+                                          <p>
+                                            Etiam sit amet orci eget eros faucibus
+                                            tincidunt. Duis leo. Sed fringilla mauris sit
+                                            amet nibh. Donec sodales sagittis magna.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                               </div>
+                              <div class="swiper-slide">
+                                <div class="fitem">
+                                    <div class="resume-item">
+                                      <div class="date">
+                                        <span class="vericaltext"> 2009-2010 </span>
+                                        <div class="fname">
+                                          <span>
+                                            Web Design Course <br />
+                                            London
+                                          </span>
+                                        </div>
+                                        <div class="single-post-text-two">
+                                          <p>
+                                            Etiam sit amet orci eget eros faucibus
+                                            tincidunt. Duis leo. Sed fringilla mauris sit
+                                            amet nibh. Donec sodales sagittis magna.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="fitem">
+                                    <div class="resume-item">
+                                      <div class="date">
+                                        <span class="vericaltext"> 2008-2009 </span>
+                                      </div>
+                                      <div class="itemcont">
+                                        <div class="fname">
+                                          <span>
+                                            Art Course <br />
+                                            London
+                                          </span>
+                                        </div>
+                                        <div class="single-post-text-two">
+                                          <p>
+                                            Etiam sit amet orci eget eros faucibus
+                                            tincidunt. Duis leo. Sed fringilla mauris sit
+                                            amet nibh. Donec sodales sagittis magna.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+
                             </div>
                           </div>
-                        </div>
-                        <div class="fitem">
-                          <div class="resume-item">
-                            <div class="date">
-                              <span class="vericaltext"> 2010-2011 </span>
-                              <div class="fname">
-                                <span>
-                                  Programming Course <br />
-                                  Paris
-                                </span>
-                              </div>
-                              <div class="single-post-text-two">
-                                <p>
-                                  Etiam sit amet orci eget eros faucibus
-                                  tincidunt. Duis leo. Sed fringilla mauris sit
-                                  amet nibh. Donec sodales sagittis magna.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="fitem">
-                          <div class="resume-item">
-                            <div class="date">
-                              <span class="vericaltext"> 2009-2010 </span>
-                              <div class="fname">
-                                <span>
-                                  Web Design Course <br />
-                                  London
-                                </span>
-                              </div>
-                              <div class="single-post-text-two">
-                                <p>
-                                  Etiam sit amet orci eget eros faucibus
-                                  tincidunt. Duis leo. Sed fringilla mauris sit
-                                  amet nibh. Donec sodales sagittis magna.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="fitem">
-                          <div class="resume-item">
-                            <div class="date">
-                              <span class="vericaltext"> 2008-2009 </span>
-                            </div>
-                            <div class="itemcont">
-                              <div class="fname">
-                                <span>
-                                  Art Course <br />
-                                  London
-                                </span>
-                              </div>
-                              <div class="single-post-text-two">
-                                <p>
-                                  Etiam sit amet orci eget eros faucibus
-                                  tincidunt. Duis leo. Sed fringilla mauris sit
-                                  amet nibh. Donec sodales sagittis magna.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                        
                     </div>
                   </div>
                 </div>
@@ -599,6 +646,9 @@
                                 style="width: 90%"
                               ></span>
                             </div>
+                            <span class="perc1">
+                              <span>90%</span>
+                            </span>
                           </div>
                         </li>
                         <li>
@@ -616,9 +666,12 @@
                             <div class="progress-bar">
                               <span
                                 class="progress-bar-fill"
-                                style="width: 90%"
+                                style="width: 70%"
                               ></span>
                             </div>
+                            <span class="perc2">
+                              <span>70%</span>
+                            </span>
                           </div>
                         </li>
                         <li>
@@ -636,9 +689,12 @@
                             <div class="progress-bar">
                               <span
                                 class="progress-bar-fill"
-                                style="width: 90%"
+                                style="width: 95%"
                               ></span>
                             </div>
+                            <span class="perc3">
+                              <span>95%</span>
+                            </span>
                           </div>
                         </li>
                         <li>
@@ -656,8 +712,157 @@
                             <div class="progress-bar">
                               <span
                                 class="progress-bar-fill"
-                                style="width: 90%"
+                                style="width: 85%"
                               ></span>
+                            </div>
+                            <span class="perc4">
+                              <span>85%</span>
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sevensection">
+            <div class="sevencont">
+              <div class="section-resume">
+                <div class="sevencontent">
+                  <div class="titles">
+                    <div class="title">
+                      <h2>Language skills</h2>
+                      <h5>READING AND WRITING</h5>
+                    </div>
+                    <div class="skills dotted">
+                      <ul>
+                        <li>
+                          <div class="name">
+                            <span> English </span>
+                          </div>
+                          <div class="single-post">
+                            <div>
+                              <p>
+                                Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
+                                fringilla mauris sit amet nibh.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="progress">
+                            <div class="percentage" style="width: 90%">
+                              <span class="percent">
+                                <span> 90% </span>
+                                <span class="da da1">
+                                  <span class="pr"></span>
+                                  <span class="dr"></span>
+                                  <span class="tr"></span>
+                                  <span class="ce"></span>
+                                  <span class="pe"></span>
+                                  <span class="se"></span>
+                                  <span class="sed"></span>
+                                  <span class="os"></span>
+                                  <span class="dev"></span>
+                                  <span class="des"></span>
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="name">
+                            <span> German </span>
+                          </div>
+                          <div class="single-post">
+                            <div>
+                              <p>
+                                Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
+                                fringilla mauris sit amet nibh.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="progress">
+                            <div class="percentage" style="width: 90%">
+                              <span class="percent">
+                                <span> 90% </span>
+                                <span class="da da2">
+                                  <span class="pr"></span>
+                                  <span class="dr"></span>
+                                  <span class="tr"></span>
+                                  <span class="ce"></span>
+                                  <span class="pe"></span>
+                                  <span class="se"></span>
+                                  <span class="sed"></span>
+                                  <span class="os"></span>
+                                  <span class="dev"></span>
+                                  <span class="des"></span>
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="name">
+                            <span> Italian </span>
+                          </div>
+                          <div class="single-post">
+                            <div>
+                              <p>
+                                Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
+                                fringilla mauris sit amet nibh.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="progress">
+                            <div class="percentage" style="width: 90%">
+                              <span class="percent">
+                                <span> 90% </span>
+                                <span class="da da3">
+                                  <span class="pr"></span>
+                                  <span class="dr"></span>
+                                  <span class="tr"></span>
+                                  <span class="ce"></span>
+                                  <span class="pe"></span>
+                                  <span class="se"></span>
+                                  <span class="sed"></span>
+                                  <span class="os"></span>
+                                  <span class="dev"></span>
+                                  <span class="des"></span>
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="name">
+                            <span> French </span>
+                          </div>
+                          <div class="single-post">
+                            <div>
+                              <p>
+                                Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
+                                fringilla mauris sit amet nibh.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="progress">
+                            <div class="percentage" style="width: 90%">
+                              <span class="percent">
+                                <span> 90% </span>
+                                <span class="da da4">
+                                  <span class="pr"></span>
+                                  <span class="dr"></span>
+                                  <span class="tr"></span>
+                                  <span class="ce"></span>
+                                  <span class="pe"></span>
+                                  <span class="se"></span>
+                                  <span class="sed"></span>
+                                  <span class="os"></span>
+                                  <span class="dev"></span>
+                                  <span class="des"></span>
+                                </span>
+                              </span>
                             </div>
                           </div>
                         </li>
@@ -680,93 +885,93 @@
                     <div class="skills-percent">
                       <ul>
                         <li>
+                          <div class="progress">
+                            <div class="progress--circle progress--90">
+                              <div class="progress__number">90%</div>
+                            </div>
+                          </div>
                           <div class="name">
                             <span> WordPress </span>
                             <div class="single-post-text">
                               <p>
-                                Etiam sit amet orci eget eros faucibus
-                                tincidunt. Duis leo. Sed fringilla mauris sit
-                                amet nibh.
+                                Etiam sit amet orci eget eros faucibus tincidunt.
                               </p>
                             </div>
                           </div>
-                          <div class="progress">
-                            <!--Procenti-->
-                          </div>
                         </li>
                         <li>
+                          <div class="progress">
+                            <div class="progress--circle progress--75">
+                              <div class="progress__number">75%</div>
+                            </div>
+                          </div>
                           <div class="name">
                             <span> PHP, mySQL </span>
                             <div class="single-post-text">
                               <p>
-                                Etiam sit amet orci eget eros faucibus
-                                tincidunt. Duis leo. Sed fringilla mauris sit
-                                amet nibh.
+                                Etiam sit amet orci eget eros faucibus tincidunt.
                               </p>
                             </div>
                           </div>
-                          <div class="progress">
-                            <!--Procenti-->
-                          </div>
                         </li>
                         <li>
+                          <div class="progress">
+                            <div class="progress--circle progress--85">
+                              <div class="progress__number">85%</div>
+                            </div>
+                          </div>
                           <div class="name">
                             <span> JavaScript </span>
                             <div class="single-post-text">
                               <p>
-                                Etiam sit amet orci eget eros faucibus
-                                tincidunt. Duis leo. Sed fringilla mauris sit
-                                amet nibh.
+                                Etiam sit amet orci eget eros faucibus tincidunt.
                               </p>
                             </div>
                           </div>
-                          <div class="progress">
-                            <!--Procenti-->
-                          </div>
                         </li>
                         <li>
+                          <div class="progress">
+                            <div class="progress--circle progress--80">
+                              <div class="progress__number">80%</div>
+                            </div>
+                          </div>
                           <div class="name">
                             <span> Angular </span>
                             <div class="single-post-text">
                               <p>
-                                Etiam sit amet orci eget eros faucibus
-                                tincidunt. Duis leo. Sed fringilla mauris sit
-                                amet nibh.
+                                Etiam sit amet orci eget eros faucibus tincidunt.
                               </p>
                             </div>
                           </div>
-                          <div class="progress">
-                            <!--Procenti-->
-                          </div>
                         </li>
                         <li>
+                          <div class="progress">
+                            <div class="progress--circle progress--95">
+                              <div class="progress__number">95%</div>
+                            </div>
+                          </div>
                           <div class="name">
                             <span> HTML, CSS </span>
                             <div class="single-post-text">
                               <p>
-                                Etiam sit amet orci eget eros faucibus
-                                tincidunt. Duis leo. Sed fringilla mauris sit
-                                amet nibh.
+                                Etiam sit amet orci eget eros faucibus tincidunt.
                               </p>
                             </div>
                           </div>
-                          <div class="progress">
-                            <!--Procenti-->
-                          </div>
                         </li>
                         <li>
+                          <div class="progress">
+                            <div class="progress--circle progress--90">
+                              <div class="progress__number">90%</div>
+                            </div>
+                          </div>
                           <div class="name">
                             <span> Pyton </span>
                             <div class="single-post-text">
                               <p>
-                                Etiam sit amet orci eget eros faucibus
-                                tincidunt. Duis leo. Sed fringilla mauris sit
-                                amet nibh.
+                                Etiam sit amet orci eget eros faucibus tincidunt.
                               </p>
                             </div>
-                          </div>
-                          <div class="progress">
-                            <!--Procenti-->
                           </div>
                         </li>
                       </ul>
@@ -788,100 +993,110 @@
                   </div>
                   <div class="ninecont">
                     <div class="content-carousel">
-                      <div class="owl-carousel">
-                        <div class="item">
-                          <div class="review-item">
-                            <div class="image">
-                              <img src="/images/rev1.png" alt="" srcset="" />
-                            </div>
-                            <div class="inf">
-                              <div class="name">
-                                <span>Joseph Mackey</span>
+                        <div class="swiper-container swiper3">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="review-item">
+                                      <div class="image">
+                                        <img src="images/rev1.png" alt="" srcset="" />
+                                      </div>
+                                      <div class="inf">
+                                        <div class="name">
+                                          <span>Joseph Mackey</span>
+                                        </div>
+                                        <div class="company">
+                                          <span>Architect</span>
+                                        </div>
+                                        <div class="text">
+                                          <p>
+                                            Excellent all around! What stood out most was
+                                            Jake's excellent service. He made sure our
+                                            order was placed in time, even though we were
+                                            ordering on a holiday.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                               </div>
-                              <div class="company">
-                                <span>Architect</span>
+                              <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="review-item">
+                                      <div class="image">
+                                        <img src="images/user_02.jpg" alt="" srcset="" />
+                                      </div>
+                                      <div class="inf">
+                                        <div class="name">
+                                          <span>Laura Owens</span>
+                                        </div>
+                                        <div class="company">
+                                          <span>Designer</span>
+                                        </div>
+                                        <div class="text">
+                                          <p>
+                                            Excellent all around! What stood out most was
+                                            Jake's excellent service. He made sure our
+                                            order was placed in time, even though we were
+                                            ordering on a holiday.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                               </div>
-                              <div class="text">
-                                <p>
-                                  Excellent all around! What stood out most was
-                                  Jake's excellent service. He made sure our
-                                  order was placed in time, even though we were
-                                  ordering on a holiday.
-                                </p>
+                              <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="review-item">
+                                      <div class="image">
+                                        <img src="images/user_03.jpg" alt="" srcset="" />
+                                      </div>
+                                      <div class="inf">
+                                        <div class="name">
+                                          <span>Olivia Riley</span>
+                                        </div>
+                                        <div class="company">
+                                          <span>CEO</span>
+                                        </div>
+                                        <div class="text">
+                                          <p>
+                                            Excellent all around! What stood out most was
+                                            Jake's excellent service. He made sure our
+                                            order was placed in time, even though we were
+                                            ordering on a holiday.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="review-item">
+                                      <div class="image">
+                                        <img src="images/rev1.png" alt="" srcset="" />
+                                      </div>
+                                      <div class="inf">
+                                        <div class="name">
+                                          <span>Javier Parker</span>
+                                        </div>
+                                        <div class="company">
+                                          <span>Developer</span>
+                                        </div>
+                                        <div class="text">
+                                          <p>
+                                            Excellent all around! What stood out most was
+                                            Jake's excellent service. He made sure our
+                                            order was placed in time, even though we were
+                                            ordering on a holiday.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="item">
-                          <div class="review-item">
-                            <div class="image">
-                              <img src="/images/user_02.jpg" alt="" srcset="" />
-                            </div>
-                            <div class="inf">
-                              <div class="name">
-                                <span>Laura Owens</span>
-                              </div>
-                              <div class="company">
-                                <span>Designer</span>
-                              </div>
-                              <div class="text">
-                                <p>
-                                  Excellent all around! What stood out most was
-                                  Jake's excellent service. He made sure our
-                                  order was placed in time, even though we were
-                                  ordering on a holiday.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <div class="review-item">
-                            <div class="image">
-                              <img src="/images/user_03.jpg" alt="" srcset="" />
-                            </div>
-                            <div class="inf">
-                              <div class="name">
-                                <span>Olivia Riley</span>
-                              </div>
-                              <div class="company">
-                                <span>CEO</span>
-                              </div>
-                              <div class="text">
-                                <p>
-                                  Excellent all around! What stood out most was
-                                  Jake's excellent service. He made sure our
-                                  order was placed in time, even though we were
-                                  ordering on a holiday.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <div class="review-item">
-                            <div class="image">
-                              <img src="/images/rev1.png" alt="" srcset="" />
-                            </div>
-                            <div class="inf">
-                              <div class="name">
-                                <span>Javier Parker</span>
-                              </div>
-                              <div class="company">
-                                <span>Developer</span>
-                              </div>
-                              <div class="text">
-                                <p>
-                                  Excellent all around! What stood out most was
-                                  Jake's excellent service. He made sure our
-                                  order was placed in time, even though we were
-                                  ordering on a holiday.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -900,50 +1115,64 @@
                   </div>
                   <div class="ten-carousel">
                     <div class="content-carousel">
-                      <div class="owl-carousel" data-slidesview_mobile="2">
-                        <div class="item">
-                          <div class="client-item">
-                            <a href="#">
-                              <img src="images/client1-256x123.png" alt="" />
-                            </a>
+                        <div class="swiper2">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="item item3">
+                                    <div class="client-item">
+                                      <a href="#">
+                                        <img src="images/client1-256x123.png" alt="" />
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="item item3">
+                                    <div class="client-item">
+                                      <a href="#">
+                                        <img src="images/client2-256x92.png" alt="" />
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="item item3">
+                                    <div class="client-item">
+                                      <a href="#">
+                                        <img src="images/client3.png" alt="" />
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="item item3">
+                                    <div class="client-item">
+                                      <a href="#">
+                                        <img src="images/client4-256x232.png" alt="" />
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="item item3">
+                                    <div class="client-item">
+                                      <a href="#">
+                                        <img src="images/client4-256x232.png" alt="" />
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="item item3">
+                                    <div class="client-item">
+                                      <a href="#">
+                                        <img src="images/client4-256x232.png" alt="" />
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div class="item">
-                          <div class="client-item">
-                            <a href="#">
-                              <img src="images/client2-256x92.png" alt="" />
-                            </a>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <div class="client-item">
-                            <a href="#">
-                              <img src="images/client3.png" alt="" />
-                            </a>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <div class="client-item">
-                            <a href="#">
-                              <img src="images/client4-256x232.png" alt="" />
-                            </a>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <div class="client-item">
-                            <a href="#">
-                              <img src="images/client4-256x232.png" alt="" />
-                            </a>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <div class="client-item">
-                            <a href="#">
-                              <img src="images/client4-256x232.png" alt="" />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -963,46 +1192,13 @@
                   <div class="filter-menu">
                     <div class="filters">
                       <div class="btn-group">
-                        <label for="all">
-                          <input type="radio" name="fl_radio" id="" />
-                          All
-                        </label>
-                      </div>
-                      <div class="btn-group">
-                        <label for="all">
-                          <input type="radio" name="fl_radio" id="" />
-                          Video
-                        </label>
-                      </div>
-                      <div class="btn-group">
-                        <label for="all">
-                          <input type="radio" name="fl_radio" id="" />
-                          Music
-                        </label>
-                      </div>
-                      <div class="btn-group">
-                        <label for="all">
-                          <input type="radio" name="fl_radio" id="" />
-                          Links
-                        </label>
-                      </div>
-                      <div class="btn-group">
-                        <label for="all">
-                          <input type="radio" name="fl_radio" id="" />
-                          Image
-                        </label>
-                      </div>
-                      <div class="btn-group">
-                        <label for="all">
-                          <input type="radio" name="fl_radio" id="" />
-                          Gallery
-                        </label>
-                      </div>
-                      <div class="btn-group">
-                        <label for="all">
-                          <input type="radio" name="fl_radio" id="" />
-                          Content
-                        </label>
+                        <button type="button " class="control btn-group" data-filter="all">All</button>
+                        <button type="button " class="control btn-group" data-filter=".video ">Video</button>
+                        <button type="button " class="control btn-group" data-filter=".music ">Music</button>
+                        <button type="button " class="control btn-group" data-filter=".links ">Links</button>
+                        <button type="button " class="control btn-group" data-filter=".image ">Image</button>
+                        <button type="button " class="control btn-group" data-filter=".gallery ">Gallery</button>
+                        <button type="button " class="control btn-group" data-filter=".content ">Content</button>
                       </div>
                     </div>
                   </div>
@@ -1010,228 +1206,202 @@
                     <div class="box-col">
                       <div class="box-item">
                       <div class="box-group">
-                        <div class="box-col f-video">
-                          <div class="box-item">
-                            <div class="image">
-                              <a
-                                href="https://youtu.be/S4L8T2kFFck"
-                                class="has-popup-video"
-                              >
-                                <img
-                                  src="https://myour.bslthemes.com/wp-content/uploads/2020/06/work2-680x680.jpg"
-                                  alt="Book of John Paper"
-                                />
-                                <span class="info">
-                                  <span class="vertical-center">
-                              
-                                  </span>
-                                </span>
-                              </a>
-                              <div class="desc">
-                                <div class="category">Video</div>
-                                <a
-                                  href="https://youtu.be/S4L8T2kFFck"
-                                  class="name has-popup-video"
-                                  >Book of John Paper</a
+                        <ul class="container">
+                          <li class="mix video">
+                            <div class="box-col f-video">
+                              <div class="box-item">
+                                <div class="image">
+                                  <a
+                                  href="images/work1-680x680.jpg"
+                                  class="has-popup-video"
+                                  >
+                                  <img
+                                    src="images/work1-680x680.jpg"
+                                    alt="Book of John Paper"
+                                  />
+                                </div>
+                                <div class="desc">
+                                  <div class="category">Video</div>
+                                  <a
+                                    href="images/work1-680x680.jpg"
+                                    class="name has-popup-video"
+                                    >Book of John Paper</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mix image">
+                            <div class="box-col f-video">
+                              <div class="box-item">
+                                <div class="image">
+                                  <a
+                                  href="images/work2-680x680.jpg"
+                                  class="has-popup-image"
                                 >
+                                  <img
+                                    src="images/work2-680x680.jpg"
+                                    alt="White Rose Photo"
+                                  />
+                                </div>
+                                <div class="desc">
+                                  <div class="category">Image</div>
+                                  <a
+                                    href="images/work2-680x680.jpg"
+                                    class="name has-popup-image"
+                                    >White Rose Photo</a
+                                  >
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="box-col f-image">
-                          <div class="box-item">
-                            <div class="image">
-                              <a
-                                href="https://myour.bslthemes.com/wp-content/uploads/2020/06/work7.jpg"
-                                class="has-popup-image"
-                              >
-                                <img
-                                  src="https://myour.bslthemes.com/wp-content/uploads/2020/06/work7-680x680.jpg"
-                                  alt="White Rose Photo"
-                                />
-                                <span class="info">
-                                  <span class="vertical-center">
-                                    
-                                  </span>
-                                </span>
-                              </a>
-                              <div class="desc">
-                              <div class="category">Image</div>
-                              <a
-                                href="https://myour.bslthemes.com/wp-content/uploads/2020/06/work7.jpg"
-                                class="name has-popup-image"
-                                >White Rose Photo</a
-                              >
-                            </div>
-                          </div>
-                          </div>
-                        </div>
-                        <div class="box-col f-image">
-                          <div class="box-item">
-                            <div class="image">
-                              <a
-                                href="https://myour.bslthemes.com/wp-content/uploads/2020/06/work4.jpg"
-                                class="has-popup-image"
-                              >
-                                <img
-                                  src="https://myour.bslthemes.com/wp-content/uploads/2020/06/work4-680x680.jpg"
-                                  alt="Honest Company"
-                                />
-                                <span class="info">
-                                  <span class="vertical-center">
-                              
-                                  </span>
-                                </span>
-                              </a>
-                            </div>
-                            <div class="desc">
-                              <div class="category">Image</div>
-                              <a
-                                href="https://myour.bslthemes.com/wp-content/uploads/2020/06/work4.jpg"
-                                class="name has-popup-image"
-                                >Honest Company</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                        <div class="box-col f-gallery">
-                          <div class="box-item">
-                            <div class="image">
-                              <a href="#" class="has-popup-gallery">
-                                <img
-                                  src="https://myour.bslthemes.com/wp-content/uploads/2020/06/work5-680x680.jpg"
-                                  alt="Brown Short Dog"
-                                />
-                                <span class="info">
-                                  <span class="vertical-center">
-                                  
-                                  </span>
-                                </span>
-                              </a>
-                              <div id="gallery-87" class="mfp-hide">
-                                <a
-                                  href="https://myour.bslthemes.com/wp-content/uploads/2020/06/work4.jpg"
-                                ></a>
-                                <a
-                                  href="https://myour.bslthemes.com/wp-content/uploads/2020/06/work6.jpg"
-                                ></a>
-                                <a
-                                  href="https://myour.bslthemes.com/wp-content/uploads/2020/06/work8.jpg"
-                                ></a>
-                                <a
-                                  href="https://myour.bslthemes.com/wp-content/uploads/2020/06/work1.jpg"
-                                ></a>
+                          </li>
+                          <li class="mix video">
+                            <div class="box-col f-video">
+                              <div class="box-item">
+                                <div class="image">
+                                  <a
+                                  href="images/work3-680x680.jpg"
+                                  class="has-popup-image"
+                                >
+                                  <img
+                                    src="images/work3-680x680.jpg"
+                                    alt="Honest Company"
+                                  />
+                                </div>
+                                <div class="desc">
+                                  <div class="category">Image</div>
+                                  <a
+                                    href="images/work3-680x680.jpg"
+                                    class="name has-popup-image"
+                                    >Honest Company</a
+                                  >
+                                </div>
                               </div>
                             </div>
-                            <div class="desc">
-                              <div class="category">Gallery</div>
-                              <a
-                                href="#gallery-87"
-                                class="name has-popup-gallery"
-                                >Brown Short Dog</a
-                              >
+                          </li>
+                          <li class="mix music">
+                            <div class="box-col f-video">
+                              <div class="box-item">
+                                <div class="image">
+                                  <a
+                                  href="images/work4-680x680.jpg"
+                                  class="has-popup-video"
+                                  >
+                                  <img
+                                    src="images/work4-680x680.jpg"
+                                    alt="Book of John Paper"
+                                  />
+                                </div>
+                                <div class="desc">
+                                  <div class="category">Music</div>
+                                  <a
+                                    href="images/work4-680x680.jpg"
+                                    class="name has-popup-image"
+                                    >Honest Company</a
+                                  >
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="box-col f-music">
-                          <div class="box-item">
-                            <div class="image">
-                              <a
-                                href="https://w.soundcloud.com/player/?visual=true&#038;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&#038;show_artwork=true"
-                                class="has-popup-music"
-                              >
-                                <img
-                                  src="https://myour.bslthemes.com/wp-content/uploads/2020/06/work6-680x680.jpg"
-                                  alt="Brown Concrete Building"
-                                />
-                                <span class="info">
-                                  <span class="vertical-center">
-                                  </span>
-                                </span>
-                              </a>
+                          </li>
+                          <li class="mix links">
+                            <div class="box-col f-video">
+                              <div class="box-item">
+                                <div class="image">
+                                  <a
+                                  href="#gallery-87"
+                                  class="has-popup-gallery"
+                                >
+                                  <img
+                                    src="images/work5-680x680.jpg"
+                                    alt="Brown Short Dog"
+                                  />
+                                </div>
+                                <div class="desc">
+                                  <div class="category">Link</div>
+                                  <a
+                                    href="#gallery-87"
+                                    class="name has-popup-gallery"
+                                    >Brown Short Dog</a
+                                  >
+                                </div>
+                              </div>
                             </div>
-                            <div class="desc">
-                              <div class="category">Music</div>
-                              <a
-                                href="https://w.soundcloud.com/player/?visual=true&#038;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&#038;show_artwork=true"
-                                class="name has-popup-music"
-                                >Brown Concrete Building</a
-                              >
+                          </li>
+                          <li class="mix image">
+                            <div class="box-col f-video">
+                              <div class="box-item">
+                                <div class="image">
+                                  <a
+                                  href="images/work6-680x680.jpg"
+                                  class="has-popup-music"
+                                >
+                                  <img
+                                    src="images/work6-680x680.jpg"
+                                    alt="Brown Concrete Building"
+                                  />
+                                </div>
+                                <div class="desc">
+                                  <div class="category">image</div>
+                                  <a
+                                    href="images/work6-680x680.jpg"
+                                    class="name has-popup-music"
+                                    >Brown Concrete Building</a
+                                  >
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                        </div>
-                          <div class="box-col f-links">
-                            <div class="box-item">
-                              <div class="image">
-                                <a
-                                  href="https://google.com/"
+                          </li>
+                          <li class="mix gallery">
+                            <div class="box-col f-video">
+                              <div class="box-item">
+                                <div class="image">
+                                  <a
+                                  href="images/work7-680x680.jpg"
+                                  class="has-popup-video"
+                                  >
+                                  <img
+                                    src="images/work7-680x680.jpg"
+                                    alt="Book of John Paper"
+                                  />
+                                </div>
+                                <div class="desc">
+                                  <div class="category">Gallery</div>
+                                  <a
+                                    href="images/work7-680x680.jpg"
+                                    class="name has-popup-video"
+                                    >Book of John Paper</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mix content">
+                            <div class="box-col f-video">
+                              <div class="box-item">
+                                <div class="image">
+                                  <a
+                                  href="images/work8-680x680.jpg"
                                   class="has-popup-link"
                                   target="_blank"
                                 >
                                   <img
-                                    src="https://myour.bslthemes.com/wp-content/uploads/2020/06/work3-680x680.jpg"
+                                    src="images/work8-680x680.jpg"
                                     alt="Black Car"
                                   />
-                                  <span class="info">
-                                    <span class="vertical-center">
-                                      <img src="/images/images-solid.svg" alt="" srcset="">
-                                    </span>
-                                  </span>
-                                </a>
-                              </div>
-                              <div class="desc">
-                                <div class="category">Links</div>
-                                <a
-                                  href="https://google.com/"
-                                  class="name has-popup-link"
-                                  target="_blank"
-                                  >Black Car</a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                          <div class="box-col f-content">
-                            <div class="box-item">
-                              <div class="image">
-                                <a href="#popup-78" class="has-popup-media">
-                                  <img
-                                    src="https://myour.bslthemes.com/wp-content/uploads/2020/06/work8-680x680.jpg"
-                                    alt="Yellow and Blue Striped"
-                                  />
-                                  <span class="info">
-                                    <span class="vertical-center">
-                                    </span>
-                                  </span>
-                                </a>
-                              </div>
-                              <div class="desc">
-                                <div class="category">Content</div>
-                                <a href="#popup-78" class="name has-popup-media"
-                                  >Yellow and Blue Striped</a
-                                >
-                              </div>
-                              <div
-                                id="popup-78"
-                                class="popup-box mfp-fade mfp-hide"
-                              >
-                                <div class="content">
-                                  <div class="preloader-popup">
-                                    <div class="box-1">
-                                      <div class="centrize full-width">
-                                        <div class="vertical-center">
-                                          <div class="spinner">
-                                            <div class="lines"></div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="box-2"></div>
-                                  </div>
+                                </div>
+                                <div class="desc">
+                                  <div class="category">Content</div>
+                                  <a
+                                    href="images/work8-680x680.jpg"
+                                    class="name has-popup-link"
+                                    target="_blank"
+                                    >Black Car</a
+                                  >
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -1253,7 +1423,7 @@
                   <div class="contact-form">
                     <form action="" method="POST">
                       <div class="gropu-val" id="portolink">
-                        <div class="label">Full name</div>
+                        <div class="label">Full name <span class="star">*</span></div>
                         <input
                         id="fullname"
                           type="text"
@@ -1263,11 +1433,11 @@
                         />
                       </div>
                       <div class="gropu-val" id="portolink">
-                        <div class="label">Email</div>
+                        <div class="label">Email <span class="star">*</span></div>
                         <input type="text" name="email" placeholder="Email" id="email" class="email" />
                       </div>
                       <div class="gropu-val"id="portolink">
-                        <div class="label">Message</div>
+                        <div class="label">Message <span class="star">*</span></div>
                         <textarea cols="40" rows="10" placeholder="To write" id="textarea" class="textarea">
                         </textarea>
                       </div>
@@ -1318,7 +1488,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="author">Joe Wilson</div>
+                    <div class="author" style="font-family: 'Mr Dafoe', cursive; font-size: 36px;">Joe Wilson</div>
                   </div>
                 </div>
                 </div>
@@ -1350,11 +1520,18 @@
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
     crossorigin="anonymous"
   ></script>
+  <!--owl-->
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous"
   ></script>
+  <!--owl-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script>
     $(".owl-carousel").owlCarousel({
       center: true,
@@ -1372,5 +1549,97 @@
 
     });
   </script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          // init: false,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+          }
+        });
+        var swiper = new Swiper('.swiper2', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          // init: false,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+          }
+        });
+        var swiper = new Swiper('.swiper3', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          // init: false,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 1,
+              spaceBetween: 50,
+            },
+          }
+        });
+      </script>
+      <script>
+              var containerEl = document.querySelector("ul.container");
+
+              var mixer = mixitup(containerEl, {
+                animation: {
+                  effects: "fade translateZ(-100px)",
+                  effectsIn: "fade translateY(-100%)",
+                  easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
+                }
+              });
+              
+              $("[data-fancybox]").fancybox({
+                selector : '.mix:visible a',
+                loop: true,
+                hash: true,
+                transitionEffect: "slide",
+                clickContent: function(current, event) {
+                  return current.type === "image" ? "next" : false;
+                }
+              });
+      </script>
   </body>
 </html>
