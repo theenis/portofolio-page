@@ -20,7 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
- 
+    <!--owl-->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -33,6 +33,7 @@
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous"
   />
+  <!--owl-->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -42,10 +43,45 @@
   href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
 />
   </head>
-  <div class="loader">
-    <img src="images/Pulse-1.2s-237px.gif" alt="Loading..." />
-</div>
   <body>
+    <div class="loader">
+      <img src="images/Pulse-1.2s-237px.gif" alt="Loading..." />
+  </div>
+    <header>
+      <div class="topnavcont">
+        <div class="topnav" id="myTopnav">
+          <div class="logo_wrapper">
+            <a href="https://www.google.com">
+              <img src="images/logo.png" alt="" srcset="" class="logo-img" />
+              <span class="logo-ink">
+                Joe <br />
+                Wilson
+              </span>
+            </a>
+          </div>
+          <div id="portolink" class="downcv">
+            <a href="">Download CV</a>
+          </div>
+          <div class="top-menu">
+            <a href="#buy">Buy Theme</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact" data-easing="easeInOutQuart" >Contacts</a>
+            <a href="#portofolio" data-easing="easeInOutQuart" >Portofolio</a>
+            <a href="#resume" data-easing="easeInOutQuart" >Resume</a>
+            <a href="#about" data-easing="easeInOutQuart" >About</a>
+            <a href="#home" data-easing="easeInOutQuart" >Home</a>
+            <a href="index.html" id="scroll-to" class="logo scroll-to"> </a>
+            <a
+              href="javascript:void(0);"
+              style="font-size: 24px"
+              class="icon"
+              onclick="navbarf()"
+              >&#9776;</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="wrapper">
       <div class="background-bg">
         <div class="background-filter">
@@ -54,7 +90,7 @@
       </div>
       <div class="content">
         <div class="main">
-          <section class="firstsec">
+          <section class="firstsec" id="home">
             <div class="firstcont">
               <div class="firsth">
                 <h1 class="h-title">Joé <br />Wilson</h1>
@@ -83,7 +119,7 @@
               </div>
             </div>
           </section>
-          <section class="secsection">
+          <section class="secsection" id="about">
             <div class="secondcont">
               <div class="titles">
                 <div class="sech">
@@ -397,7 +433,7 @@
               </div>
             </div>
           </section>
-          <section class="fivesection">
+          <section class="fivesection" id="resume">
             <div class="fivecont">
               <div class="section-resume">
                 <div class="fiveconta">
@@ -1181,7 +1217,7 @@
               </div>
             </div>
           </section>
-          <section class="elevensection">
+          <section class="elevensection" id="portofolio">
             <div class="elevencont">
               <div class="section-works">
                 <div class="elevencontent">
@@ -1411,7 +1447,7 @@
               </div>
             </div>
           </section>
-          <section class="twelvesection">
+          <section class="twelvesection" id="contact">
             <div class="twelvecont">
               <div class="section-contact">
                 <div class="twelvecont">
@@ -1522,33 +1558,19 @@
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
     crossorigin="anonymous"
   ></script>
+  <!--owl-->
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous"
   ></script>
+  <!--owl-->
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script>
-    $(".owl-carousel").owlCarousel({
-      center: true,
-      items: 2,
-      loop: false,
-      margin: 10,
-      responsiveClass:true,
-      responsive:{
-        800:{
-            items:2,
-            nav:false,
-            loop: false
-        },
-    }
-
-    });
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.js" integrity="sha512-7RJJepMYGySQYUtVVI+ShJWXDp4qUAWo3ovhCEHFOv5Ga16+lzRQHR6HQe/EBqNoO/aUQfhMU2PGrsQeAThIoQ==" crossorigin="anonymous"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
           slidesPerView: 1,
@@ -1640,6 +1662,16 @@
                   return current.type === "image" ? "next" : false;
                 }
               });
+      </script>
+      <script>
+        var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
+
+if (document.querySelector("[data-easing]")) {
+  var easeInOutQuart = new SmoothScroll('[data-easing="easeInOutQuart"]', {
+    easing: "easeInOutQuart",
+  });
+}
+
       </script>
   </body>
 </html>
