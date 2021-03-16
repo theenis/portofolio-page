@@ -1,1645 +1,1731 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  background-color: #373b40;
+  color: #fff;
+  font-size: 14px;
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+i {
+  color: #68e0cf;
+}
 
-    <link rel="stylesheet" href="style/style.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-      type="text/javascript"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <!--owl-->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous"
-  />
-  <!--owl-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+section {
+  position: relative;
+  overflow: hidden;
+  padding: 70px 30px;
+  border-bottom: 1px solid #585d65;
+}
+.main section :last-child {
+  border-bottom: 0px solid transparent;
+}
+.firstp {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+#portolink a {
+  z-index: 8;
+  white-space: nowrap;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(255, 255, 255, 0.25);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  visibility: inherit;
+  transition: none 0s ease 0s;
+  text-align: left;
+  margin: 0px;
+  padding: 20px 35px;
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: none;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-origin: 50% 50% 0px;
+  box-shadow: rgb(153, 153, 153) 0px 0px 0px 0px;
+}
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
-/>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="background-bg">
-        <div class="background-filter">
-          <div class="background-img" style="background: url('images/man.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
-        </div>
-      </div>
-      <div class="content">
-        <div class="main">
-          <section class="firstsec">
-            <div class="firstcont">
-              <div class="firsth">
-                <h1 class="h-title">Joé <br />Wilson</h1>
-              </div>
-              <div class="firstanim">
-                <h6>
-                  <a
-                    href=""
-                    class="typewrite"
-                    data-period="2000"
-                    data-type='[ "Web Designer", "Programmer", "Consultant and Mentor"]'
-                  >
-                    <span class="wrap"></span>
-                  </a>
-                </h6>
-              </div>
-              <div class="firstp">
-                <p>
-                  Hello! I am Web Developer from United States, New York. I have
-                  rich experience in web site design and building, also I am
-                  good at wordpress. I love to talk with you about our unique.
-                </p>
-              </div>
-              <div id="portolink">
-                <a href="#pageabout">CONTACT ME</a>
-              </div>
-            </div>
-          </section>
-          <section class="secsection">
-            <div class="secondcont">
-              <div class="titles">
-                <div class="sech">
-                  <h1>ABOUT ME</h1>
-                </div>
-                <div class="mystory">
-                  <h5>MY STORY</h5>
-                </div>
-              </div>
-              <div class="secp">
-                <p>
-                  Pellentesque posuere. Praesent turpis. Aenean posuere, tortor
-                  sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin
-                  urna dolor sagittis lacus. Pellentesque posuere. Praesent
-                  turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue
-                  blandit nunc, eu sollicitudin urna dolor sagittis lacus.
-                  <br/>
-                  <br/>
-                </p>
-                <p>
-                  Pellentesque posuere. Praesent turpis. Aenean posuere, tortor
-                  sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin
-                  urna dolor sagittis lacus. Donec elit libero, sodales nec,
-                  volutpat a, suscipit non, turpis.
-                </p>
-              </div>
-              <div class="info-list">
-                <ul>
-                  <li>
-                    <strong>
-                      <span class="q"> Age: </span>
-                    </strong>
-                    <span class="a"> 24 </span>
-                  </li>
-                  <li>
-                    <strong>
-                      <span class="q"> Residence: </span>
-                    </strong>
-                    <span class="a"> USA </span>
-                  </li>
-                  <li>
-                    <strong>
-                      <span class="q"> Freelance: </span>
-                    </strong>
-                    <span class="a"> Available </span>
-                  </li>
-                  <li>
-                    <strong>
-                      <span class="q"> Address: </span>
-                    </strong>
-                    <span class="a"> San Francisco </span>
-                  </li>
-                  <li>
-                    <strong>
-                      <span class="q"> Phone: </span>
-                    </strong>
-                    <span class="a"> +1 256 254 84 56 </span>
-                  </li>
-                  <li>
-                    <strong>
-                      <span class="q"> E-mail: </span>
-                    </strong>
-                    <span class=""> jwilson@domain.com </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <section class="thirdsection">
-            <div class="thirdcont">
-              <div class="titles">
-                <div class="thirdh">
-                  <h1>SERVICES</h1>
-                </div>
-                <div class="thirdsubt">
-                  <p>What i do</p>
-                </div>
-              </div>
-              <div class="service-items">
-                <div class="service-col">
-                  <div class="serviceitem">
-                    <div class="icon">
-                      <i class="fas fa-university"></i>
-                    </div>
-                    <div class="name">
-                      <h4>
-                        Economic <br />
-                        Science
-                      </h4>
-                    </div>
-                    <div class="single-post-text">
-                      <p>
-                        Economics is a social science concerned with the
-                        production, consumption of goods and services.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="service-col">
-                  <div class="serviceitem">
-                    <div class="icon">
-                      <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <div class="name">
-                      <h4>
-                        Marketing <br />
-                        Advertising
-                      </h4>
-                    </div>
-                    <div class="single-post-text">
-                      <p>
-                        Advertising Management though is a complex process of
-                        employing various media to sell a product or service.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="service-col">
-                  <div class="serviceitem">
-                    <div class="icon">
-                      <i class="fas fa-code"></i>
-                    </div>
-                    <div class="name">
-                      <h4>
-                        Web <br />
-                        Development
-                      </h4>
-                    </div>
-                    <div class="single-post-text">
-                      <p>
-                        The web development process includes: web design, web
-                        content, client-side / server-side scripting and network
-                        security configuration.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="service-col">
-                  <div class="serviceitem">
-                    <div class="icon">
-                      <i class="fas fa-music"></i>
-                    </div>
-                    <div class="name">
-                      <h4>
-                        Music <br />
-                        Writing
-                      </h4>
-                    </div>
-                    <div class="single-post-text">
-                      <p>
-                        Sheet music is the basic form in which Western classical
-                        music is notated so that it can be learned and performed
-                        by solo singers.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="service-col">
-                  <div class="serviceitem">
-                    <div class="icon">
-                      <i class="fas fa-gamepad"></i>
-                    </div>
-                    <div class="name">
-                      <h4>
-                        Game <br />
-                        Development
-                      </h4>
-                    </div>
-                    <div class="single-post-text">
-                      <p>
-                        Come Up With a Game Idea. An idea is the first thing
-                        that comes to mind when a game is being described before
-                        creating.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="service-col">
-                  <div class="serviceitem">
-                    <div class="icon">
-                      <i class="fas fa-video"></i>
-                    </div>
-                    <div class="name">
-                      <h4>
-                        Photography <br />
-                        & Video
-                      </h4>
-                    </div>
-                    <div class="single-post-text">
-                      <p>
-                        Sessions. If you are a photographer that spends most of
-                        the time in a portrait studio, you can charge for your
-                        session
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="foursection">
-            <div class="fourcont">
-              <div class="titles">
-                <div class="fourh">
-                  <h1>ABOUT ME</h1>
-                </div>
-                <div class="fourdes">
-                  <h5>MY STORY</h5>
-                </div>
-              </div>
-              <div class="fourcards">
-                <div class="content-carousel">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="item">
-                                <div class="pricing-item">
-                                  <div class="icons">
-                                    <i class="fas fa-star"></i>
-                                  </div>
-                                  <div class="name">
-                                    <span>Basic</span>
-                                  </div>
-                                  <div class="amount">
-                                    <span class="number">
-                                      <span class="dollar"> $ </span>
-                                      <span> 39 </span>
-                                      <span class="period"> hour </span>
-                                    </span>
-                                  </div>
-                                  <div class="feature-list">
-                                    <ul>
-                                      <li>Web Development</li>
-                                      <li>Advetising</li>
-                                      <li>Game Development</li>
-                                      <li><del>Music Writing</del></li>
-                                      <li><del>Photography</del></li>
-                                    </ul>
-                                    <div id="portolink" class="filink">
-                                      <a href="#pageabout">BUY NOW</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="item">
-                                <div class="pricing-item">
-                                  <div class="icons">
-                                    <i class="fas fa-star"></i>
-                                  </div>
-                                  <div class="name">
-                                    <span>Premium</span>
-                                  </div>
-                                  <div class="amount">
-                                    <span class="number">
-                                      <span class="dollar"> $ </span>
-                                      <span> 59</span>
-                                      <span class="period">hour </span>
-                                    </span>
-                                  </div>
-                                  <div class="feature-list">
-                                    <ul>
-                                      <li>Web Development</li>
-                                      <li>Advetising</li>
-                                      <li>Game Development</li>
-                                      <li>Music Writing</li>
-                                      <li>Photography</li>
-                                    </ul>
-                                    <div id="portolink" class="filink">
-                                      <a href="#pageabout">BUY NOW</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="item">
-                                <div class="pricing-item">
-                                  <div class="icons">
-                                    <i class="fas fa-star"></i>
-                                  </div>
-                                  <div class="name">
-                                    <span>Ultimate</span>
-                                  </div>
-                                  <div class="amount">
-                                    <span class="number">
-                                      <span class="dollar"> $ </span>
-                                      <span> 79 </span>
-                                      <span class="period"> hour </span>
-                                    </span>
-                                  </div>
-                                  <div class="feature-list">
-                                    <ul>
-                                      <li>Web Development</li>
-                                      <li>Advetising</li>
-                                      <li>Game Development</li>
-                                      <li>Music Writing</li>
-                                      <li>Photography</li>
-                                    </ul>
-                                    <div id="portolink" class="filink">
-                                      <a href="#pageabout">BUY NOW</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="fivesection">
-            <div class="fivecont">
-              <div class="section-resume">
-                <div class="fiveconta">
-                  <div class="titles">
-                    <div class="title">
-                      <h2>Experience</h2>
-                      <h5>Working with</h5>
-                    </div>
-                    <div class="content-carousel">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                <div class="fitem">
-                                    <div class="resume-item active">
-                                      <div class="date">
-                                        <span class="vericaltext"> Present </span>
-                                        <div class="fname">
-                                          <span>
-                                            The Turin<br />
-                                            Olympics
-                                          </span>
-                                        </div>
-                                        <div class="single-post-text-two">
-                                          <p>
-                                            Etiam sit amet orci eget eros faucibus
-                                            tincidunt. Duis leo. Sed fringilla mauris sit
-                                            amet nibh. Donec sodales sagittis magna.
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="fitem">
-                                    <div class="resume-item">
-                                      <div class="date">
-                                        <span class="vericaltext"> 2016-2018 </span>
-                                        <div class="fname">
-                                          <span>
-                                            Red <br />
-                                            Drifting
-                                          </span>
-                                        </div>
-                                        <div class="single-post-text-two">
-                                          <p>
-                                            Etiam sit amet orci eget eros faucibus
-                                            tincidunt. Duis leo. Sed fringilla mauris sit
-                                            amet nibh. Donec sodales sagittis magna.
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="fitem">
-                                    <div class="resume-item">
-                                      <div class="date">
-                                        <span class="vericaltext"> 2014-2016 </span>
-                                        <div class="fname">
-                                          <span>
-                                            World <br />
-                                            Economy
-                                          </span>
-                                        </div>
-                                        <div class="single-post-text-two">
-                                          <p>
-                                            Etiam sit amet orci eget eros faucibus
-                                            tincidunt. Duis leo. Sed fringilla mauris sit
-                                            amet nibh. Donec sodales sagittis magna.
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="fitem">
-                                    <div class="resume-item">
-                                      <div class="date">
-                                        <span class="vericaltext"> 2012-2014 </span>
-                                      </div>
-                                      <div class="itemcont">
-                                        <div class="fname">
-                                          <span>
-                                            Art Director <br />
-                                            Facebook
-                                          </span>
-                                        </div>
-                                        <div class="single-post-text-two">
-                                          <p>
-                                            Etiam sit amet orci eget eros faucibus
-                                            tincidunt. Duis leo. Sed fringilla mauris sit
-                                            amet nibh. Donec sodales sagittis magna.
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="sixsection">
-            <div class="sixcont">
-              <div class="section-resume">
-                <div class="sixconta">
-                  <div class="titles">
-                    <div class="title">
-                      <h2>Education</h2>
-                      <h5>Studied at</h5>
-                    </div>
-                    <div class="content-carousel">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                <div class="fitem">
-                                    <div class="resume-item active">
-                                      <div class="date">
-                                        <span class="vericaltext"> 2011-2012 </span>
-                                        <div class="fname">
-                                          <span>
-                                            Art University <br />
-                                            New York
-                                          </span>
-                                        </div>
-                                        <div class="single-post-text-two">
-                                          <p>
-                                            Etiam sit amet orci eget eros faucibus
-                                            tincidunt. Duis leo. Sed fringilla mauris sit
-                                            amet nibh. Donec sodales sagittis magna.
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="fitem">
-                                    <div class="resume-item">
-                                      <div class="date">
-                                        <span class="vericaltext"> 2010-2011 </span>
-                                        <div class="fname">
-                                          <span>
-                                            Programming Course <br />
-                                            Paris
-                                          </span>
-                                        </div>
-                                        <div class="single-post-text-two">
-                                          <p>
-                                            Etiam sit amet orci eget eros faucibus
-                                            tincidunt. Duis leo. Sed fringilla mauris sit
-                                            amet nibh. Donec sodales sagittis magna.
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="fitem">
-                                    <div class="resume-item">
-                                      <div class="date">
-                                        <span class="vericaltext"> 2009-2010 </span>
-                                        <div class="fname">
-                                          <span>
-                                            Web Design Course <br />
-                                            London
-                                          </span>
-                                        </div>
-                                        <div class="single-post-text-two">
-                                          <p>
-                                            Etiam sit amet orci eget eros faucibus
-                                            tincidunt. Duis leo. Sed fringilla mauris sit
-                                            amet nibh. Donec sodales sagittis magna.
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="fitem">
-                                    <div class="resume-item">
-                                      <div class="date">
-                                        <span class="vericaltext"> 2008-2009 </span>
-                                      </div>
-                                      <div class="itemcont">
-                                        <div class="fname">
-                                          <span>
-                                            Art Course <br />
-                                            London
-                                          </span>
-                                        </div>
-                                        <div class="single-post-text-two">
-                                          <p>
-                                            Etiam sit amet orci eget eros faucibus
-                                            tincidunt. Duis leo. Sed fringilla mauris sit
-                                            amet nibh. Donec sodales sagittis magna.
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
+.firstanim {
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.firstanim a {
+  color: #68e0cf;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.background-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 100%;
+}
 
-                            </div>
-                          </div>
-                        
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="sevensection">
-            <div class="sevencont">
-              <div class="section-resume">
-                <div class="sevencontent">
-                  <div class="titles">
-                    <div class="title">
-                      <h2>Design Skills</h2>
-                      <h5>CREATIVE ABILITY</h5>
-                    </div>
-                    <div class="des-skills-percent">
-                      <ul>
-                        <li>
-                          <div class="name">
-                            <span> Web Layout </span>
-                            <div class="single-post-text-seven">
-                              <p>
-                                Etiam sit amet orci eget eros faucibus
-                                tincidunt. Duis leo. Sed fringilla mauris sit
-                                amet nibh.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar">
-                              <span
-                                class="progress-bar-fill"
-                                style="width: 90%"
-                              ></span>
-                            </div>
-                            <span class="perc1">
-                              <span>90%</span>
-                            </span>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="name">
-                            <span> Illustrations </span>
-                            <div class="single-post-text-seven">
-                              <p>
-                                Etiam sit amet orci eget eros faucibus
-                                tincidunt. Duis leo. Sed fringilla mauris sit
-                                amet nibh.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar">
-                              <span
-                                class="progress-bar-fill"
-                                style="width: 70%"
-                              ></span>
-                            </div>
-                            <span class="perc2">
-                              <span>70%</span>
-                            </span>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="name">
-                            <span> Photoshop </span>
-                            <div class="single-post-text-seven">
-                              <p>
-                                Etiam sit amet orci eget eros faucibus
-                                tincidunt. Duis leo. Sed fringilla mauris sit
-                                amet nibh.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar">
-                              <span
-                                class="progress-bar-fill"
-                                style="width: 95%"
-                              ></span>
-                            </div>
-                            <span class="perc3">
-                              <span>95%</span>
-                            </span>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="name">
-                            <span> Graphic Design </span>
-                            <div class="single-post-text-seven">
-                              <p>
-                                Etiam sit amet orci eget eros faucibus
-                                tincidunt. Duis leo. Sed fringilla mauris sit
-                                amet nibh.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar">
-                              <span
-                                class="progress-bar-fill"
-                                style="width: 85%"
-                              ></span>
-                            </div>
-                            <span class="perc4">
-                              <span>85%</span>
-                            </span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="sevensection">
-            <div class="sevencont">
-              <div class="section-resume">
-                <div class="sevencontent">
-                  <div class="titles">
-                    <div class="title">
-                      <h2>Language skills</h2>
-                      <h5>READING AND WRITING</h5>
-                    </div>
-                    <div class="skills dotted">
-                      <ul>
-                        <li>
-                          <div class="name">
-                            <span> English </span>
-                          </div>
-                          <div class="single-post">
-                            <div>
-                              <p>
-                                Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
-                                fringilla mauris sit amet nibh.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="progress">
-                            <div class="percentage" style="width: 90%">
-                              <span class="percent">
-                                <span> 90% </span>
-                                <span class="da da1">
-                                  <span class="pr"></span>
-                                  <span class="dr"></span>
-                                  <span class="tr"></span>
-                                  <span class="ce"></span>
-                                  <span class="pe"></span>
-                                  <span class="se"></span>
-                                  <span class="sed"></span>
-                                  <span class="os"></span>
-                                  <span class="dev"></span>
-                                  <span class="des"></span>
-                                </span>
-                              </span>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="name">
-                            <span> German </span>
-                          </div>
-                          <div class="single-post">
-                            <div>
-                              <p>
-                                Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
-                                fringilla mauris sit amet nibh.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="progress">
-                            <div class="percentage" style="width: 90%">
-                              <span class="percent">
-                                <span> 90% </span>
-                                <span class="da da2">
-                                  <span class="pr"></span>
-                                  <span class="dr"></span>
-                                  <span class="tr"></span>
-                                  <span class="ce"></span>
-                                  <span class="pe"></span>
-                                  <span class="se"></span>
-                                  <span class="sed"></span>
-                                  <span class="os"></span>
-                                  <span class="dev"></span>
-                                  <span class="des"></span>
-                                </span>
-                              </span>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="name">
-                            <span> Italian </span>
-                          </div>
-                          <div class="single-post">
-                            <div>
-                              <p>
-                                Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
-                                fringilla mauris sit amet nibh.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="progress">
-                            <div class="percentage" style="width: 90%">
-                              <span class="percent">
-                                <span> 90% </span>
-                                <span class="da da3">
-                                  <span class="pr"></span>
-                                  <span class="dr"></span>
-                                  <span class="tr"></span>
-                                  <span class="ce"></span>
-                                  <span class="pe"></span>
-                                  <span class="se"></span>
-                                  <span class="sed"></span>
-                                  <span class="os"></span>
-                                  <span class="dev"></span>
-                                  <span class="des"></span>
-                                </span>
-                              </span>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="name">
-                            <span> French </span>
-                          </div>
-                          <div class="single-post">
-                            <div>
-                              <p>
-                                Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
-                                fringilla mauris sit amet nibh.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="progress">
-                            <div class="percentage" style="width: 90%">
-                              <span class="percent">
-                                <span> 90% </span>
-                                <span class="da da4">
-                                  <span class="pr"></span>
-                                  <span class="dr"></span>
-                                  <span class="tr"></span>
-                                  <span class="ce"></span>
-                                  <span class="pe"></span>
-                                  <span class="se"></span>
-                                  <span class="sed"></span>
-                                  <span class="os"></span>
-                                  <span class="dev"></span>
-                                  <span class="des"></span>
-                                </span>
-                              </span>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="eightsection">
-            <div class="eightcont">
-              <div class="section-resume">
-                <div class="eightcontent">
-                  <div class="titles">
-                    <div class="title">
-                      <h2>Coding skills</h2>
-                      <span>Developing on</span>
-                    </div>
-                    <div class="skills-percent">
-                      <ul>
-                        <li>
-                          <div class="progress">
-                            <div class="progress--circle progress--90">
-                              <div class="progress__number">90%</div>
-                            </div>
-                          </div>
-                          <div class="name">
-                            <span> WordPress </span>
-                            <div class="single-post-text">
-                              <p>
-                                Etiam sit amet orci eget eros faucibus tincidunt.
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="progress">
-                            <div class="progress--circle progress--75">
-                              <div class="progress__number">75%</div>
-                            </div>
-                          </div>
-                          <div class="name">
-                            <span> PHP, mySQL </span>
-                            <div class="single-post-text">
-                              <p>
-                                Etiam sit amet orci eget eros faucibus tincidunt.
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="progress">
-                            <div class="progress--circle progress--85">
-                              <div class="progress__number">85%</div>
-                            </div>
-                          </div>
-                          <div class="name">
-                            <span> JavaScript </span>
-                            <div class="single-post-text">
-                              <p>
-                                Etiam sit amet orci eget eros faucibus tincidunt.
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="progress">
-                            <div class="progress--circle progress--80">
-                              <div class="progress__number">80%</div>
-                            </div>
-                          </div>
-                          <div class="name">
-                            <span> Angular </span>
-                            <div class="single-post-text">
-                              <p>
-                                Etiam sit amet orci eget eros faucibus tincidunt.
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="progress">
-                            <div class="progress--circle progress--95">
-                              <div class="progress__number">95%</div>
-                            </div>
-                          </div>
-                          <div class="name">
-                            <span> HTML, CSS </span>
-                            <div class="single-post-text">
-                              <p>
-                                Etiam sit amet orci eget eros faucibus tincidunt.
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="progress">
-                            <div class="progress--circle progress--90">
-                              <div class="progress__number">90%</div>
-                            </div>
-                          </div>
-                          <div class="name">
-                            <span> Pyton </span>
-                            <div class="single-post-text">
-                              <p>
-                                Etiam sit amet orci eget eros faucibus tincidunt.
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="ninesection">
-            <div class="ninecont">
-              <div class="testimonials">
-                <div class="content">
-                  <div class="titles">
-                    <div class="title">
-                      <h2>Reviews</h2>
-                      <span>What customers say</span>
-                    </div>
-                  </div>
-                  <div class="ninecont">
-                    <div class="content-carousel">
-                        <div class="swiper-container swiper3">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                <div class="item">
-                                    <div class="review-item">
-                                      <div class="image">
-                                        <img src="images/rev1.png" alt="" srcset="" />
-                                      </div>
-                                      <div class="inf">
-                                        <div class="name">
-                                          <span>Joseph Mackey</span>
-                                        </div>
-                                        <div class="company">
-                                          <span>Architect</span>
-                                        </div>
-                                        <div class="text">
-                                          <p>
-                                            Excellent all around! What stood out most was
-                                            Jake's excellent service. He made sure our
-                                            order was placed in time, even though we were
-                                            ordering on a holiday.
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="item">
-                                    <div class="review-item">
-                                      <div class="image">
-                                        <img src="images/user_02.jpg" alt="" srcset="" />
-                                      </div>
-                                      <div class="inf">
-                                        <div class="name">
-                                          <span>Laura Owens</span>
-                                        </div>
-                                        <div class="company">
-                                          <span>Designer</span>
-                                        </div>
-                                        <div class="text">
-                                          <p>
-                                            Excellent all around! What stood out most was
-                                            Jake's excellent service. He made sure our
-                                            order was placed in time, even though we were
-                                            ordering on a holiday.
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="item">
-                                    <div class="review-item">
-                                      <div class="image">
-                                        <img src="images/user_03.jpg" alt="" srcset="" />
-                                      </div>
-                                      <div class="inf">
-                                        <div class="name">
-                                          <span>Olivia Riley</span>
-                                        </div>
-                                        <div class="company">
-                                          <span>CEO</span>
-                                        </div>
-                                        <div class="text">
-                                          <p>
-                                            Excellent all around! What stood out most was
-                                            Jake's excellent service. He made sure our
-                                            order was placed in time, even though we were
-                                            ordering on a holiday.
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="item">
-                                    <div class="review-item">
-                                      <div class="image">
-                                        <img src="images/rev1.png" alt="" srcset="" />
-                                      </div>
-                                      <div class="inf">
-                                        <div class="name">
-                                          <span>Javier Parker</span>
-                                        </div>
-                                        <div class="company">
-                                          <span>Developer</span>
-                                        </div>
-                                        <div class="text">
-                                          <p>
-                                            Excellent all around! What stood out most was
-                                            Jake's excellent service. He made sure our
-                                            order was placed in time, even though we were
-                                            ordering on a holiday.
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="tensection">
-            <div class="tencont">
-              <div class="section-clients">
-                <div class="tencontent">
-                  <div class="titles">
-                    <div class="title">
-                      <h2>Clients</h2>
-                      <span>My partners</span>
-                    </div>
-                  </div>
-                  <div class="ten-carousel">
-                    <div class="content-carousel">
-                        <div class="swiper2">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                <div class="item item3">
-                                    <div class="client-item">
-                                      <a href="#">
-                                        <img src="images/client1-256x123.png" alt="" />
-                                      </a>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="item item3">
-                                    <div class="client-item">
-                                      <a href="#">
-                                        <img src="images/client2-256x92.png" alt="" />
-                                      </a>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="item item3">
-                                    <div class="client-item">
-                                      <a href="#">
-                                        <img src="images/client3.png" alt="" />
-                                      </a>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="item item3">
-                                    <div class="client-item">
-                                      <a href="#">
-                                        <img src="images/client4-256x232.png" alt="" />
-                                      </a>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="item item3">
-                                    <div class="client-item">
-                                      <a href="#">
-                                        <img src="images/client4-256x232.png" alt="" />
-                                      </a>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="item item3">
-                                    <div class="client-item">
-                                      <a href="#">
-                                        <img src="images/client4-256x232.png" alt="" />
-                                      </a>
-                                    </div>
-                                  </div>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="elevensection">
-            <div class="elevencont">
-              <div class="section-works">
-                <div class="elevencontent">
-                  <div class="titles">
-                    <div class="title">
-                      <h2>Portofolio</h2>
-                      <span>Latest works</span>
-                    </div>
-                  </div>
-                  <div class="filter-menu">
-                    <div class="filters">
-                      <div class="btn-group">
-                        <button type="button " class="control btn-group" data-filter="all">All</button>
-                        <button type="button " class="control btn-group" data-filter=".video ">Video</button>
-                        <button type="button " class="control btn-group" data-filter=".music ">Music</button>
-                        <button type="button " class="control btn-group" data-filter=".links ">Links</button>
-                        <button type="button " class="control btn-group" data-filter=".image ">Image</button>
-                        <button type="button " class="control btn-group" data-filter=".gallery ">Gallery</button>
-                        <button type="button " class="control btn-group" data-filter=".content ">Content</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="box-items">
-                    <div class="box-col">
-                      <div class="box-item">
-                      <div class="box-group">
-                        <ul class="container">
-                          <li class="mix video">
-                            <div class="box-col f-video">
-                              <div class="box-item">
-                                <div class="image">
-                                  <a
-                                  href="images/work1-680x680.jpg"
-                                  class="has-popup-video"
-                                  >
-                                  <img
-                                    src="images/work1-680x680.jpg"
-                                    alt="Book of John Paper"
-                                  />
-                                </div>
-                                <div class="desc">
-                                  <div class="category">Video</div>
-                                  <a
-                                    href="images/work1-680x680.jpg"
-                                    class="name has-popup-video"
-                                    >Book of John Paper</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="mix image">
-                            <div class="box-col f-video">
-                              <div class="box-item">
-                                <div class="image">
-                                  <a
-                                  href="images/work2-680x680.jpg"
-                                  class="has-popup-image"
-                                >
-                                  <img
-                                    src="images/work2-680x680.jpg"
-                                    alt="White Rose Photo"
-                                  />
-                                </div>
-                                <div class="desc">
-                                  <div class="category">Image</div>
-                                  <a
-                                    href="images/work2-680x680.jpg"
-                                    class="name has-popup-image"
-                                    >White Rose Photo</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="mix video">
-                            <div class="box-col f-video">
-                              <div class="box-item">
-                                <div class="image">
-                                  <a
-                                  href="images/work3-680x680.jpg"
-                                  class="has-popup-image"
-                                >
-                                  <img
-                                    src="images/work3-680x680.jpg"
-                                    alt="Honest Company"
-                                  />
-                                </div>
-                                <div class="desc">
-                                  <div class="category">Image</div>
-                                  <a
-                                    href="images/work3-680x680.jpg"
-                                    class="name has-popup-image"
-                                    >Honest Company</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="mix music">
-                            <div class="box-col f-video">
-                              <div class="box-item">
-                                <div class="image">
-                                  <a
-                                  href="images/work4-680x680.jpg"
-                                  class="has-popup-video"
-                                  >
-                                  <img
-                                    src="images/work4-680x680.jpg"
-                                    alt="Book of John Paper"
-                                  />
-                                </div>
-                                <div class="desc">
-                                  <div class="category">Music</div>
-                                  <a
-                                    href="images/work4-680x680.jpg"
-                                    class="name has-popup-image"
-                                    >Honest Company</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="mix links">
-                            <div class="box-col f-video">
-                              <div class="box-item">
-                                <div class="image">
-                                  <a
-                                  href="#gallery-87"
-                                  class="has-popup-gallery"
-                                >
-                                  <img
-                                    src="images/work5-680x680.jpg"
-                                    alt="Brown Short Dog"
-                                  />
-                                </div>
-                                <div class="desc">
-                                  <div class="category">Link</div>
-                                  <a
-                                    href="#gallery-87"
-                                    class="name has-popup-gallery"
-                                    >Brown Short Dog</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="mix image">
-                            <div class="box-col f-video">
-                              <div class="box-item">
-                                <div class="image">
-                                  <a
-                                  href="images/work6-680x680.jpg"
-                                  class="has-popup-music"
-                                >
-                                  <img
-                                    src="images/work6-680x680.jpg"
-                                    alt="Brown Concrete Building"
-                                  />
-                                </div>
-                                <div class="desc">
-                                  <div class="category">image</div>
-                                  <a
-                                    href="images/work6-680x680.jpg"
-                                    class="name has-popup-music"
-                                    >Brown Concrete Building</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="mix gallery">
-                            <div class="box-col f-video">
-                              <div class="box-item">
-                                <div class="image">
-                                  <a
-                                  href="images/work7-680x680.jpg"
-                                  class="has-popup-video"
-                                  >
-                                  <img
-                                    src="images/work7-680x680.jpg"
-                                    alt="Book of John Paper"
-                                  />
-                                </div>
-                                <div class="desc">
-                                  <div class="category">Gallery</div>
-                                  <a
-                                    href="images/work7-680x680.jpg"
-                                    class="name has-popup-video"
-                                    >Book of John Paper</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="mix content">
-                            <div class="box-col f-video">
-                              <div class="box-item">
-                                <div class="image">
-                                  <a
-                                  href="images/work8-680x680.jpg"
-                                  class="has-popup-link"
-                                  target="_blank"
-                                >
-                                  <img
-                                    src="images/work8-680x680.jpg"
-                                    alt="Black Car"
-                                  />
-                                </div>
-                                <div class="desc">
-                                  <div class="category">Content</div>
-                                  <a
-                                    href="images/work8-680x680.jpg"
-                                    class="name has-popup-link"
-                                    target="_blank"
-                                    >Black Car</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="twelvesection">
-            <div class="twelvecont">
-              <div class="section-contact">
-                <div class="twelvecont">
-                  <div class="titles">
-                    <div class="title">
-                      <h2>Contact</h2>
-                      <span>Let's talk</span>
-                    </div>
-                  </div>
-                  <div class="contactcont">
-                  <div class="contact-form">
-                    <form action="" method="POST">
-                      <div class="gropu-val" id="portolink">
-                        <div class="label">Full name <span class="star">*</span></div>
-                        <input
-                        id="fullname"
-                          type="text"
-                          name="fullname"
-                          placeholder="Full name"
-                          class="fullname"
-                        />
-                      </div>
-                      <div class="gropu-val" id="portolink">
-                        <div class="label">Email <span class="star">*</span></div>
-                        <input type="text" name="email" placeholder="Email" id="email" class="email" />
-                      </div>
-                      <div class="gropu-val"id="portolink">
-                        <div class="label">Message <span class="star">*</span></div>
-                        <textarea cols="40" rows="10" placeholder="To write" id="textarea" class="textarea">
-                        </textarea>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="contact-info" id="portolink1">
-                    <div class="name">Joe Wilson</div>
-                    <div class="subname">
-                      Consultant &amp; Mentor
-                    </div>
-                    <div class="infor-list">
-                      <ul>
-                        <li>
-                          <strong>
-                            <span class="q"> Age: </span>
-                          </strong>
-                          <span class="a"> 24 </span>
-                        </li>
-                        <li>
-                          <strong>
-                            <span class="q"> Residence: </span>
-                          </strong>
-                          <span class="a"> USA </span>
-                        </li>
-                        <li>
-                          <strong class="q">
-                            <span> Freelance: </span>
-                          </strong>
-                          <span class="a"> Available </span>
-                        </li>
-                        <li>
-                          <strong>
-                            <span class="q"> Address: </span>
-                          </strong>
-                          <span class="a"> San Francisco </span>
-                        </li>
-                        <li>
-                          <strong>
-                            <span class="q"> Phone: </span>
-                          </strong>
-                          <span class="a"> +1 256 254 84 56 </span>
-                        </li>
-                        <li>
-                          <strong>
-                            <span class="q"> E-mail: </span>
-                          </strong>
-                          <span class="a"> jwilson@domain.com </span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="author" style="font-family: 'Mr Dafoe', cursive; font-size: 36px;">Joe Wilson</div>
-                  </div>
-                </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-      <footer class="footer">
-        <div class="footer-inner">
-          <div class="socials">
-            <a target="_blank" href="https://www.facebook.com/">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a target="_blank" href="https://www.instagram.com/">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a target="_blank" href="https://dribbble.com/"> 
-              <i class="fas fa-basketball-ball"></i>
-            </a>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="script/script.js"></script>
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-    crossorigin="anonymous"
-  ></script>
-  <!--owl-->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous"
-  ></script>
-  <!--owl-->
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script>
-    $(".owl-carousel").owlCarousel({
-      center: true,
-      items: 2,
-      loop: false,
-      margin: 10,
-      responsiveClass:true,
-      responsive:{
-        800:{
-            items:2,
-            nav:false,
-            loop: false
-        },
-    }
+.background-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #68e0cf;
+}
 
-    });
-  </script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-          slidesPerView: 1,
-          spaceBetween: 10,
-          // init: false,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          breakpoints: {
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 30,
-            },
-            1024: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-          }
-        });
-        var swiper = new Swiper('.swiper2', {
-          slidesPerView: 1,
-          spaceBetween: 10,
-          // init: false,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          breakpoints: {
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            1024: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-          }
-        });
-        var swiper = new Swiper('.swiper3', {
-          slidesPerView: 1,
-          spaceBetween: 10,
-          // init: false,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          breakpoints: {
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            1024: {
-              slidesPerView: 1,
-              spaceBetween: 50,
-            },
-          }
-        });
-      </script>
-      <script>
-              var containerEl = document.querySelector("ul.container");
+.background-filter .background-img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  mix-blend-mode: luminosity;
+}
 
-              var mixer = mixitup(containerEl, {
-                animation: {
-                  effects: "fade translateZ(-100px)",
-                  effectsIn: "fade translateY(-100%)",
-                  easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
-                }
-              });
-              
-              $("[data-fancybox]").fancybox({
-                selector : '.mix:visible a',
-                loop: true,
-                hash: true,
-                transitionEffect: "slide",
-                clickContent: function(current, event) {
-                  return current.type === "image" ? "next" : false;
-                }
-              });
-      </script>
-  </body>
-</html>
+.background-filter.gradient:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 0.5) 0%,
+    #373b40 90%
+  );
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 0.5) 0%,
+    #373b40 90%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.5) 0%,
+    #373b40 90%
+  );
+}
+
+.background-filter.gradient .background-img {
+  -webkit-filter: none;
+  filter: none;
+  mix-blend-mode: unset;
+}
+
+.background-filter.circle {
+  clip-path: circle(75% at 10% 45%);
+  -webkit-clip-path: circle(75% at 10% 45%);
+}
+
+.background-filter.circle .background-img {
+  -webkit-filter: none;
+  filter: none;
+  mix-blend-mode: unset;
+}
+
+.background-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 70px 0px;
+  }
+  .background-bg {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+  }
+
+  .background-filter.circle {
+    clip-path: circle(100% at 50% 0%);
+    -webkit-clip-path: circle(100% at 50% 0%);
+  }
+  .box-col ul {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .box-col ul li {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  .box-col ul {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .box-col ul li {
+    margin: 20px;
+  }
+}
+
+.main {
+  margin-left: 45%;
+  margin-right: 100px;
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+.firstsec {
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-top: -130px;
+  position: relative;
+  overflow: visible;
+  z-index: 11;
+}
+
+.firstcont {
+  display: table;
+  table-layout: fixed;
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+.firstcont #portolink {
+  padding-left: 8%;
+}
+.firstsec .h-title {
+  margin: 40px 0 0 -11vw;
+  padding: 4.2vw;
+  font-size: 4.2vw;
+  line-height: 1.4;
+  font-weight: 800;
+  color: #fff;
+  background-color: #373b40;
+  word-break: break-word;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  border-radius: 264px;
+  -moz-border-radius: 264px;
+  -webkit-border-radius: 264px;
+}
+
+.firstp {
+  font-size: 20px;
+  line-height: 1.4;
+  padding-left: 8%;
+}
+
+.secsection {
+  padding-top: 10%;
+}
+
+.sech {
+  margin: 0 0 10px;
+  max-width: 70%;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: 800;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+.sech h1 {
+  margin-bottom: 0;
+}
+.secp {
+  font-size: 18px;
+}
+.mystory {
+  color: #68e0cf;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.titles {
+  margin: 0 0 60px;
+}
+
+.info-list ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0;
+  font-size: 17px;
+}
+
+.q {
+  color: #68e0cf;
+}
+.a {
+  padding-right: 20px;
+  margin-bottom: 15px;
+}
+
+.thirdsection .titles {
+  margin: 0 0 60px;
+  position: relative;
+}
+.thirdsubt {
+  color: #68e0cf;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.service-items {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+}
+.serviceitem .icon {
+  margin-bottom: 15px;
+  font-size: 32px;
+  height: 32px;
+}
+
+.serviceitem {
+  margin-top: 50px;
+}
+
+.serviceitem .name {
+  margin: 0 0 30px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.name {
+  margin: 0 0 30px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.single-post-text p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.sech {
+  margin: 0 0 10px;
+  max-width: 70%;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: 800;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+.four h1 {
+  margin-bottom: 0;
+}
+.fourdes {
+  color: #68e0cf;
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.name {
+  margin: 0;
+}
+.company {
+  color: #68e0cf;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.cardone {
+  text-align: center;
+  width: 50%;
+}
+
+.cardone .cardname {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 18px;
+}
+.cardone .price {
+  margin: 30px 0;
+  font-size: 45px;
+}
+.featurelist li {
+  list-style-type: none;
+  margin: 10px 0;
+  font-size: 16px;
+  padding: 0;
+}
+.cardone a {
+  font-size: 20px;
+}
+
+.pricing-item {
+  height: 390px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.pricing-item .name {
+  font-size: 22px;
+}
+.feature-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.feature-list ul li {
+  margin: 10px 0;
+  font-size: 15px;
+}
+.name h4 {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.amount {
+  margin: 30px 0;
+}
+
+.amount .dollar,
+.amount .period {
+  font-size: 14px;
+}
+.number .dollar {
+  margin-right: 2%;
+  top: -30px;
+  position: relative;
+}
+.period {
+  margin-left: -2%;
+}
+.number {
+  font-size: 54px;
+  font-weight: 800;
+}
+.btn {
+  margin-left: 30px;
+}
+.titles .single-post-text p {
+  width: 50%;
+}
+
+.title h1 {
+  margin-bottom: 0;
+}
+.title h5 {
+  color: #68e0cf;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.resurme-item .date {
+  position: absolute;
+  left: -8px;
+  top: -22px;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+}
+.vericaltext {
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  display: inline-block;
+  font-size: 11px;
+  color: #68e0cf;
+  font-weight: 600;
+  text-transform: bottom left;
+  transform: rotate(90deg);
+}
+.des-skills-percent ul {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  list-style: none;
+  padding: 0;
+}
+.des-skills-percent ul li {
+  margin: 10px;
+}
+.des-skills-percent ul li span {
+  margin-bottom: 30px;
+}
+.fname {
+  margin: 0 0 30px 30px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.single-post-text-two p {
+  font-size: 14px;
+  padding-left: 5%;
+  font-weight: 500;
+  line-height: 1.8;
+}
+.title h2 {
+  font-size: 55px;
+}
+.title h5 {
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.title {
+  margin: 0 0 60px;
+}
+
+.fname {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.skills-percent ul {
+  position: relative;
+  padding: 40px 0px 0;
+  display: grid;
+  grid-template-columns: 35% 35% 35%;
+  vertical-align: top;
+  list-style-type: none;
+}
+.skills-percent ul li {
+  margin: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #585d65;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.progress-bar-fill {
+  display: block;
+  height: 1px;
+  background-color: #68e0cf;
+  border-radius: 3px;
+  transition: width 500ms ease-in-out;
+}
+
+.titles h1 {
+  margin-bottom: 0;
+}
+.titles h5 {
+  color: #68e0cf;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.single-post-text-seven p {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.title h1 {
+  margin-bottom: 0;
+}
+.title span {
+  color: #68e0cf;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.skills-percent .single-post-text p {
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.client-item {
+  opacity: 0.6;
+}
+.item3 {
+  margin-left: 20%;
+}
+.client-item a img {
+  max-width: 150px;
+}
+.elevencontent .titles .title {
+  margin-left: 20px;
+}
+
+.filters {
+  margin-left: 20px;
+}
+
+.btn-group {
+  display: inline-flex;
+  vertical-align: top;
+  margin-right: 4px;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+.btn-group :hover {
+  color: #68e0cf;
+}
+.btn-group input {
+  display: none;
+}
+
+.box-col {
+  margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+.box-group .container {
+  padding: 0;
+}
+.image a img {
+  width: 100%;
+}
+
+.category {
+  text-align: center;
+  font-size: 12px;
+  color: #68e0cf;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.desc a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+#portolink input,
+#portolink textarea {
+  z-index: 8;
+  white-space: nowrap;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(255, 255, 255, 0.25);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  visibility: inherit;
+  transition: none 0s ease 0s;
+  text-align: left;
+  margin: 0px;
+  padding: 20px 35px;
+  width: 50%;
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: none;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-origin: 50% 50% 0px;
+}
+
+#portolink1 {
+  z-index: 8;
+  white-space: nowrap;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(255, 255, 255, 0.25);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  visibility: inherit;
+  transition: none 0s ease 0s;
+  text-align: left;
+  margin: 0px;
+  padding: 20px 35px;
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: none;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-origin: 50% 50% 0px;
+}
+textarea {
+  resize: none;
+  outline: none;
+  width: 50%;
+}
+input {
+  outline: none;
+}
+
+.review-item {
+  text-align: center;
+}
+
+.contactcont {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.contact-info .infor-list {
+  margin: 35px 0 50px;
+}
+.infor-list ul {
+  margin: 0 -20px;
+  list-style: none;
+  padding: 0;
+}
+
+.infor-list ul li {
+  margin: 0 0 25px;
+  padding: 0 24px;
+  list-style-type: none;
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contact-info .name {
+  font-size: 24px;
+  margin: 0 0 5px;
+}
+.contact-info .subname {
+  font-size: 11px;
+  color: #68e0cf;
+}
+
+.label {
+  padding: 0 10px;
+  position: relative;
+  left: 35px;
+  top: 6px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.label span {
+  color: #68e0cf;
+}
+#portolink a {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+  .firsth .h-title {
+    width: 60% !important;
+    margin-top: -260px !important;
+    font-size: 50px !important;
+  }
+  .firstcont {
+    padding-bottom: 100px;
+  }
+
+  .info-list ul {
+    grid-template-columns: auto;
+  }
+
+  .info-list ul li {
+    margin: 6px 0;
+  }
+
+  .service-items {
+    grid-template-columns: auto;
+  }
+
+  .des-skills-percent ul {
+    grid-template-columns: auto;
+  }
+
+  .skills-percent ul {
+    grid-template-columns: auto auto;
+  }
+
+  .review-item {
+    text-align: center;
+  }
+
+  .btn-group {
+    display: inline;
+    margin-right: 0;
+  }
+  .contactcont {
+    grid-template-columns: auto;
+  }
+  #portolink input,
+  #portolink textarea {
+    width: 75%;
+    outline: none;
+  }
+  .twelvesection {
+    border-bottom: none;
+  }
+
+}
+
+.footer {
+  padding: 0;
+  position: fixed;
+  bottom: 40px;
+  right: 0;
+  width: 92px;
+  height: 1px;
+  z-index: 99;
+}
+
+.footer:before {
+  content: "";
+  position: absolute;
+  bottom: -50vh;
+  left: 0;
+  width: 1px;
+  height: 200vh;
+  background: #585d65;
+}
+
+.footer .socials {
+  margin-left: -27px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 54px;
+}
+
+.footer .socials a {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background: #373b40;
+  border: 1px solid #585d65;
+  border-radius: 54px;
+  -moz-border-radius: 54px;
+  -webkit-border-radius: 54px;
+  -khtml-border-radius: 54px;
+  transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
+  -moz-transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
+  -webkit-transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
+  -o-transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
+}
+
+.footer .socials a:last-child {
+  margin-bottom: 0;
+}
+
+.footer .socials a:hover {
+  color: #68e0cf;
+}
+
+@media (max-width: 992px) {
+  .main {
+    width: 90%;
+    margin: auto;
+  }
+  .firsth .h-title {
+    margin: 0 auto;
+    margin-top: -370px;
+    text-align: center;
+    padding: 70px 35px 30px;
+    width: 480px;
+    text-align: center;
+    font-size: 60px;
+    -webkit-border-radius: 360px 360px 0 0;
+  }
+  .firstcont #portolink {
+    padding-left: 0;
+  }
+  .firstcont {
+    text-align: center;
+  }
+  .firstanim {
+    margin-left: 0;
+  }
+  .firstp {
+    padding-left: 0;
+  }
+  .footer {
+    margin: 0 0 50px;
+    padding: 0;
+    position: relative;
+    bottom: auto;
+    height: auto;
+    width: 100%;
+  }
+
+  .footer:before {
+    top: 50%;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    height: 1px;
+  }
+
+  .footer .socials {
+    margin-left: 0;
+    position: relative;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+  }
+
+  .footer .socials a {
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 0;
+    width: 54px;
+  }
+
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+input #email {
+  width: 100%;
+}
+
+.progress {
+  margin-top: 10px;
+}
+.skills.dotted .progress {
+  height: 14px;
+  background: 0 0 !important;
+}
+
+.skills.dotted .progress .percentage {
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  height: 14px;
+  background: 0 0 !important;
+  z-index: 2;
+}
+
+.skills.dotted .progress .dg,
+.skills.dotted .progress .da {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 14px;
+}
+
+.skills.dotted .progress .dg span,
+.skills.dotted .progress .da span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #585d65;
+  border-radius: 14px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -khtml-border-radius: 14px;
+}
+
+.skills.dotted .progress .da {
+  top: 0;
+}
+
+.skills.dotted .progress .da span {
+  background: #68e0cf;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.skills ul li {
+  position: relative;
+  padding-bottom: 25px;
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+}
+
+.skills .name {
+  margin: 0 0 30px;
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.skills .single-post-text {
+  margin-bottom: 30px;
+}
+
+.skills .progress {
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 100%;
+  background: #585d65;
+}
+
+.skills.dotted .progress .percentage {
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  height: 14px;
+  background: 0 0 !important;
+  z-index: 2;
+}
+
+.skills.dotted .progress .dg,
+.skills.dotted .progress .da {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 14px;
+}
+
+.skills.dotted .progress .dg span,
+.skills.dotted .progress .da span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #585d65;
+  border-radius: 14px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -khtml-border-radius: 14px;
+}
+
+.skills.dotted .progress .da {
+  top: 0;
+}
+
+.skills.dotted .progress .da span {
+  background: #68e0cf;
+}
+skills.dotted .progress .dg,
+.skills.dotted .progress .da {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 14px;
+}
+
+.skills.dotted .progress .dg span,
+.skills.dotted .progress .da span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #585d65;
+  border-radius: 14px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -khtml-border-radius: 14px;
+}
+
+.single-post {
+  font-size: 14px;
+}
+
+.da1 .pr,
+.da1 .dr,
+.da1 .tr,
+.da1 .ce,
+.da1 .pe,
+.da1 .se,
+.da1 .sed,
+.da1 .os,
+.da1 .dev {
+  background: #68e0cf !important;
+}
+
+.da2 .pr,
+.da2 .dr,
+.da2 .tr,
+.da2 .ce,
+.da2 .pe,
+.da2 .se,
+.da2 .sed {
+  background: #68e0cf !important;
+}
+
+.da3 .pr,
+.da3 .dr,
+.da3 .tr,
+.da3 .ce,
+.da3 .pe,
+.da3 .se {
+  background: #68e0cf !important;
+}
+
+.da4 .pr,
+.da4 .dr,
+.da4 .tr,
+.da4 .ce,
+.da4 .pe,
+.da4 .se,
+.da4 .sed,
+.da4 .os {
+  background: #68e0cf !important;
+}
+
+.progress--bar {
+  height: 1.5rem;
+  margin: 1rem;
+  background-color: #ddd;
+}
+.progress--bar:after {
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: #68e0cf;
+}
+
+.progress--circle {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+.progress--circle:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #373b40;
+}
+.progress--circle:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #68e0cf;
+}
+
+.progress__number {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  line-height: 1;
+  margin-top: -10px;
+  text-align: center;
+  font-size: 20px;
+  color: #777;
+}
+
+.progress--pie:before {
+  display: none;
+}
+.progress--pie .progress__number {
+  color: #373b40;
+  text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
+}
+
+.progress--bar.progress--0:after {
+  width: 0%;
+}
+
+.progress--circle.progress--0:after {
+  background-image: linear-gradient(
+      90deg,
+      #373b40 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(90deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--5:after {
+  width: 5%;
+}
+
+.progress--circle.progress--5:after {
+  background-image: linear-gradient(
+      90deg,
+      #373b40 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(108deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--10:after {
+  width: 10%;
+}
+
+.progress--circle.progress--10:after {
+  background-image: linear-gradient(
+      90deg,
+      #373b40 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(126deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--15:after {
+  width: 15%;
+}
+
+.progress--circle.progress--15:after {
+  background-image: linear-gradient(
+      90deg,
+      #373b40 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(144deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--20:after {
+  width: 20%;
+}
+
+.progress--circle.progress--20:after {
+  background-image: linear-gradient(
+      90deg,
+      #373b40 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(162deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--25:after {
+  width: 25%;
+}
+
+.progress--circle.progress--25:after {
+  background-image: linear-gradient(
+      90deg,
+      #373b40 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(180deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--30:after {
+  width: 30%;
+}
+
+.progress--circle.progress--30:after {
+  background-image: linear-gradient(
+      90deg,
+      #373b40 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(198deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--35:after {
+  width: 35%;
+}
+
+.progress--circle.progress--35:after {
+  background-image: linear-gradient(
+      90deg,
+      #373b40 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(216deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--40:after {
+  width: 40%;
+}
+
+.progress--circle.progress--40:after {
+  background-image: linear-gradient(
+      90deg,
+      #373b40 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(234deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--45:after {
+  width: 45%;
+}
+
+.progress--circle.progress--45:after {
+  background-image: linear-gradient(
+      90deg,
+      #373b40 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(252deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--50:after {
+  width: 50%;
+}
+
+.progress--circle.progress--50:after {
+  background-image: linear-gradient(
+      -90deg,
+      #68e0cf 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--55:after {
+  width: 55%;
+}
+
+.progress--circle.progress--55:after {
+  background-image: linear-gradient(
+      -72deg,
+      #68e0cf 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--60:after {
+  width: 60%;
+}
+
+.progress--circle.progress--60:after {
+  background-image: linear-gradient(
+      -54deg,
+      #68e0cf 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--65:after {
+  width: 65%;
+}
+
+.progress--circle.progress--65:after {
+  background-image: linear-gradient(
+      -36deg,
+      #68e0cf 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--70:after {
+  width: 70%;
+}
+
+.progress--circle.progress--70:after {
+  background-image: linear-gradient(
+      -18deg,
+      #68e0cf 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--75:after {
+  width: 75%;
+}
+
+.progress--circle.progress--75:after {
+  background-image: linear-gradient(
+      0deg,
+      #68e0cf 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--80:after {
+  width: 80%;
+}
+
+.progress--circle.progress--80:after {
+  background-image: linear-gradient(
+      18deg,
+      #68e0cf 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--85:after {
+  width: 85%;
+}
+
+.progress--circle.progress--85:after {
+  background-image: linear-gradient(
+      36deg,
+      #68e0cf 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--90:after {
+  width: 90%;
+}
+
+.progress--circle.progress--90:after {
+  background-image: linear-gradient(
+      54deg,
+      #68e0cf 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--95:after {
+  width: 95%;
+}
+
+.progress--circle.progress--95:after {
+  background-image: linear-gradient(
+      72deg,
+      #68e0cf 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+
+.progress--bar.progress--100:after {
+  width: 100%;
+}
+
+.progress--circle.progress--100:after {
+  background-image: linear-gradient(
+      90deg,
+      #68e0cf 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #68e0cf 50%, #373b40 50%, #373b40);
+}
+  
+.perc1 span {
+  position: absolute;
+  top: 33%;
+  right: 57%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #68e0cf;
+}
+.perc2 span {
+  position: absolute;
+  top: 33%;
+  right: 16%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #68e0cf;
+}
+
+  .perc3 span {
+    position: absolute;
+    top: 83%;
+    right: 55%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #68e0cf;
+  }
+
+.perc4 span {
+  position: absolute;
+  font-size: 14px;
+  top: 83%;
+  right: 8%;
+  font-weight: 500;
+  color: #68e0cf;
+}
+
+@media screen and (max-width: 600px) {
+  .perc1 span {
+    right: 12% !important;
+  }
+  .perc2 span {
+    right: 31% !important;
+    top: 41%;
+  }
+  .perc3 span {
+    right: 8% !important;
+    top: 66%;
+  }
+  .perc4 span {
+    right: 17% !important;
+    top: 91%;
+  }
+}  
+
+
+.topnav {
+  padding: 0 0 0 10px;
+  position: fixed;
+  left: 50px;
+  right: 50px;
+  top: 40px;
+  height: 80px;
+  z-index: 100;
+  background-color: #585d65;
+  border-radius: 80px;
+}
+
+.logo_wrapper {
+  position: relative;
+  float: left;
+  width: 120px;
+  height: 80px;
+  display: flex;
+  font-size: 0;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #fff;
+  align-items: center;
+}
+
+.logo_wrapper .logo-img {
+  width: auto;
+  height: auto;
+  max-width: 36px;
+  display: inline-block;
+}
+
+.logo_wrapper .logo-img .logo-ink {
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.topnav #portolink a{
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #68e0cf;
+  border-color: #68e0cf;
+  font-size: 12px;
+}
+
+.top-menu {
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+
+.logo_wrapper .scroll-to {
+  float: left;
+}
+
+.topnav a {
+  position: relative;
+  float: right;
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+
+  color: white;
+}
+
+.dropdown-content a:active {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 906px) {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 906px) {
+  .topnav {
+    padding: 0 0 0 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+  }
+  .topnav.responsive {
+    position: fixed;
+    background-color: #585d65;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    background-color: #585d65;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+  .topnav.responsive .top-menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .topnav #portolink {
+    display: none;
+  }
+}
